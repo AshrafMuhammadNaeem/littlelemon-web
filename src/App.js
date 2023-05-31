@@ -6,6 +6,7 @@ function App() {
     <>
     <body>
       <header>
+        <nav></nav>
 
       </header>
       <main>
