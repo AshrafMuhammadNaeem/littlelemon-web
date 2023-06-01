@@ -2,6 +2,7 @@ import React from "react";
 
 export const Main = () => {
     return(
-        <div> Main</div>
+        <main>
+            <h1>This is main section </h1></main>
     )
 }
