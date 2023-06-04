@@ -21,8 +21,8 @@
 }
 
 body {
-    /* font-family: ; */
-   
+    font-family: 'Roboto Flex', sans-serif;
+    color: #333;
     line-height: 1.4;
 }
 
@@ -46,10 +46,10 @@ p{
     margin: 10px 0;
 }
 
-/* img{
+img{
     width: 100%;
 
-} */
+}
 
 header{
     background-color: var(--primary-color);
