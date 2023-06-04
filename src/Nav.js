@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Nav = () => {
   return (
-    <nav>
+    <nav className="container flex">
       <ul>
         <li><a href='#'> Home</a> </li>
         <li><a href='#'> About</a> </li>
