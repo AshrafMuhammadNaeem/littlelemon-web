@@ -1,7 +1,4 @@
 /* https://favicon.io/ to generate fav icons for your projects */
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
-
 :root{
     --primary-color: #23fcb5;
     --secondary-color: #52ffc6;
@@ -21,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto Flex', sans-serif;
+    /* font-family: 'Roboto Flex', sans-serif; */
     color: #333;
     line-height: 1.4;
 }
@@ -46,10 +43,10 @@ p{
     margin: 10px 0;
 }
 
-img{
+/* img{
     width: 100%;
 
-}
+} */
 
 header{
     background-color: var(--primary-color);
