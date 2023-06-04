@@ -2,16 +2,15 @@ import React from "react";
 
 export const Footer = () => {
     return(
-        <footer>
+        <footer className="">
             
-            <div class="container grid grid-3">
+            <div className="">
         <div>
         <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={300} width={200}/>
             
         <p>Copyright &copy; 2022</p>
         </div>
         <h4>Doormat <br/> Navigation</h4>
-            
         <nav>
         <ul>
             <li><a href='#'> Home</a> </li>
@@ -20,22 +19,21 @@ export const Footer = () => {
             <li><a href=''> Reservations</a> </li>
             <li><a href=''> Order</a> </li>
             <li><a href=''> LogIn</a> </li>
-            </ul>
-    
+        </ul>
         </nav>
-        <div class="social">
-           <a href="#"><i class="fab fa-github fa-2x"></i></a> 
-           <a href="#"><i class="fab fa-facebook fa-2x"></i></a> 
-           <a href="#"><i class="fab fa-twitter fa-2x"></i></a> 
-           <a href="#"><i class="fab fa-instagram fa-2x"></i></a> 
-        </div>
+        <div>
         <h4>Contact </h4>
             <p>Address</p>
             <p>PhoneNumber</p>
             <p>Email</p>
+        </div>
+        <div class="social">
+           <a href="#"><i class="fab fa-github fa-2x"></i></a>
+           <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+           <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+           <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
     </div>
-            
-
         </footer>
     )
 }
