@@ -5,8 +5,8 @@ export const Header = () => {
   return (
     <header className="container flex">
       <img src={logo1} alt="Logo" width={350}></img>
-      <nav>
-      <ul>
+      <nav className='tabs'>
+      <ul className='tab'>
         <li><a href='#'> Home</a> </li>
         <li><a href='#'> About</a> </li>
         <li><a href='#'> Menu</a> </li>
