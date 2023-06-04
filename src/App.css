@@ -456,18 +456,18 @@ code, pre{
 
 .bg-dark,
 .btn-dark{
-    background-color: var(--dark-color);
-    color: white;
+    background-color: var(--success-color);
+    color: black;
 }
 
 /* Footer */
 .bg-dark a,
 .social a{
-    color: white;
+    color: black;
 }
 
-.social i{
-    margin: 0 10px;
+.social-icon {
+    margin: 0 15px;
 }
 /* text-sizes */
 

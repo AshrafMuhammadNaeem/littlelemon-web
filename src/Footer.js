@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 
 export const Footer = () => {
     return(
 
-    <footer className="">
+    <footer className="bg-dark my-3 py-3">
         <div className="flex">
             <div>
              <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={300} width={200}/>
@@ -28,11 +32,10 @@ export const Footer = () => {
                 <p>PhoneNumber</p>
                 <p>Email</p>
             </div>
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <div>
+                <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+                <FontAwesomeIcon icon={faFacebook}  className="social-icon"/>
+                <FontAwesomeIcon icon={faInstagram}  className="social-icon"/>
             </div>
         </div>
     </footer>
