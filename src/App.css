@@ -1,38 +1,601 @@
-.App {
-  text-align: center;
+/* https://favicon.io/ to generate fav icons for your projects */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+:root{
+    --primary-color: #23fcb5;
+    --secondary-color: #52ffc6;
+    --light-color: #b3ffe6;
+    --dark-color: #4c2dfb;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+
+
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    /* font-family: ; */
+   
+    line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+    list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2{
+    font-weight: 300px;
+    line-height: 1.3;
+    margin: 10px 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+    margin: 10px 0;
+}
+
+/* img{
+    width: 100%;
+
+} */
+
+header{
+    background-color: var(--primary-color);
+   
+}
+
+/* spam filter */
+.hidden{
+    visibility: hidden;
+    height: 0;
+}
+
+/* .navbar .flex{
+    justify-content: center;
+} */
+.container{
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+.tabs ul{
+    display: flex;
+}
+
+.tab a{
+    color: grey;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.tab a:hover{
+    background-color: blueviolet;
+    border-bottom: #333 solid;
+}
+
+/* ShowText css */
+
+.showtext{
+    background-color: var(--primary-color);
+    height: 300px;
+    /* border: #333 solid; */
+    /* margin-top: 10px; */
+    color: black;
+    position:relative;
+}
+
+.showtext .grid{
+    /* To remove scroll that comes with some stylin like in line 98 use overflow property to get rid off */
+    overflow: visible;
+    grid-template-columns: 58% 42%;
+}
+
+.showtext h1{
+    font-size: 35px;
+}
+
+/* animation */
+
+.showtext-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+.showtext-form{
+    animation: slideInFromRight 1s ease-in;
+}
+
+.stats{
+    animation: slideInFromBottom 1s ease-in;
+}
+/* style the form inside of it that has dive with class name showtext-form*/
+.showtext-form{
+    position: relative;
+    top: 50px;
+    height: 300px;
+    width: 400px;
+    padding: 30px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+/* 4- Now we will style input elements  */
+.form-control{
+    margin: 25px 0;
+}
+
+.showtext::before,
+.showtext::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -80px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+}
+/*5- Now to target input elements without buttons we use type selector as */
+.showtext-form input[type= 'text'],
+.showtext-form input[type= 'email'] {
+    border: 0;
+    border-bottom: 2px solid salmon;
+    width: 100%;
+    font-size: 15px;
+    padding: 4px;
+}
+/*6- Now to get rid of the outline/border when clicked on input field use pseudo class */
+.showtext-form input:focus{
+    outline: none;
+}
+/* 7- now style the button */
+
+.btn{
+    display:inline-block;
+    cursor: pointer;
+    background-color: aquamarine;
+    font-size: 30px;
+    padding: 5px;
+    border: 0;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+
+/* 9- creating hover effect on button with pseudo class */
+.btn:hover{
+    width: 50%;
+    background-color: blue;
+    /* transform: scale(1, 0.8); */
+}
+    
+
+/* 8- we have alo set class of btn-outline to further read para so add styling as */
+.btn-outline{
+    background-color: transparent;
+    border: 2px solid white;
+
+}
+
+/* now use utility class of grid to make div display grid */
+.grid{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* styling the div of form with utility class*/
+.card{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 3px #333;
+    box-shadow: -5px 10px 8px lightgreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Stats section */
+
+.stats{
+    margin: 120px 0;
+    /* also can use padding-top with 100px */
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.stats .stats-heading {
+
+    /* I solved this problem of margin not being applied to text */
+    max-width: 500px;
+    margin: auto;
+    
+    
+}
+
+.stats .grid h3{
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CLI */
+
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.cli .grid img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; 
+}
+    
+/* cloud-hosting */
+
+/* .cloud-hosting{
+    background-color: var(--dark-color);
+} */
+
+/* Languages */
+.languages .flex{
+    flex-wrap: wrap;
+}
+
+.languages .card{
+    text-align: center;
+    margin: 20px 10px 40px;
+    transition: transform 0.3s ease-in;
+   
+}
+
+.languages .card h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.languages .card:hover{
+    transform: translateY(-16px);
+}
+
+/* Features page */
+
+.features-head img{
+    width: 200px;
+    
+}
+
+.features-sub-head img{
+    width: 350px;
+    justify-self: flex-end;
+}
+
+/* Feature-main */
+.features-main .card > i{
+    margin-right: 20px;
+}
+
+.features-main .grid > *:first-child{
+    grid-column: 1 / span 3;
+    padding: 30px;
+
+}
+.features-main .grid > *:nth-child(2){
+    grid-column: 1 / span 2;
+
+}
+
+/* Docs */
+.docs-head img{
+    width: 200px;
+    
+}
+
+.docs-main h3{
+    margin: 20px 0;
+}
+
+.docs-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.docs-main .bg-light li{
+    font-size: 17px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+.docs-main a:hover{
+    font-weight: bold;
+}
+.docs-main h3{
+    margin-left: 5px;
+}
+
+.alert{
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i{
+    margin-right: 10px;
+}
+
+.alert-success{
+    background-color: var(--success-color);
+    color: white;
+}
+
+.alert-error{
+    background-color: var(--error-color);
+    color: white;
+}
+
+code, pre{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+/* stats utilities */
+.text-center{
+    text-align: center;
+}
+
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+
+.my-3{
+    margin: 2rem 0;
+}
+
+.my-4{
+    margin: 3rem 0;
+}
+
+.m-1{
+    margin: 1rem 0;
+}
+.m-2{
+    margin: 1.5rem 0;
+}
+
+.m-3{
+    margin: 2rem 0;
+}
+
+.m-4{
+    margin: 3rem 0;
+}
+
+/* padding */
+
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+
+.py-3{
+    padding: 2rem 0;
+}
+
+.py-4{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1rem 0;
+}
+.p-2{
+    padding: 1.5rem 0;
+}
+
+.p-3{
+    padding: 2rem 0;
+}
+
+.p-4{
+    padding: 3rem 0;
+}
+
+/* background colors */
+
+.bg-primary,
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-secondary,
+.btn-secondary{
+    background-color: var(--secondary-color);
+}
+
+.bg-light,
+.btn-light{
+    background-color: var(--light-color);
+}
+
+.bg-dark,
+.btn-dark{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* Footer */
+.bg-dark a,
+.social a{
+    color: white;
+}
+
+.social i{
+    margin: 0 10px;
+}
+/* text-sizes */
+
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+/* Animations */
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromBottom{
+    0% {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/* Responsive Design */
+
+/* Tablet and under */
+@media(max-width: 768px){
+
+     .grid,
+    .showtext .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud-hosting .grid,
+    .features-main .grid,
+    .docs-main .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .showtext-form{
+        justify-self: center;
+        margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .showtext{
+        height: auto;
+    }
+
+    .showtext-text{
+        text-align: center;
+        margin-top: 30px;
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    .cli .grid > *:first-child{
+        grid-column: 1;
+        grid-row: 1; 
+    }
+
+    .features-head,
+    .features-sub-head,
+    .docs-head{
+        text-align: center;
+    }
+
+    .features-main .grid >*:first-child,
+    .features-main .grid >*:nth-child(2){
+        grid-column: 1;
+    }
+
+}
+
+/*  Mobile and under */
+
+@media(max-width: 500px){
+    header{
+        height: 110px;
+    }
+     .flex{
+        flex-direction: column;
+    }
+
+    .tabs ul{
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
 }
