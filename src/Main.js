@@ -3,6 +3,19 @@ import React from "react";
 export const Main = () => {
     return(
         <main>
-            <h1>This is main section </h1></main>
+            <h1>This is main section </h1>
+            <section>
+                This weeks Specials
+            </section>
+            <section>
+                Testimonials
+            </section>
+            <section>
+                About us
+            </section>
+            
+            
+            
+        </main>
     )
 }
