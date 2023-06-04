@@ -81,14 +81,14 @@ header{
 }
 
 .tab a{
-    color: grey;
+    color: black;
     margin-right: 10px;
     padding: 10px;
 }
 
 .tab a:hover{
-    background-color: blueviolet;
-    border-bottom: #333 solid;
+    /* background-color: blueviolet; */
+    border-bottom: #555353 solid;
 }
 
 /* ShowText css */
