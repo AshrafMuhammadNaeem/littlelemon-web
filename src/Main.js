@@ -32,7 +32,7 @@ export const Main = () => {
                 </div>
                 <div className="cards">
                     <div className="card">
-                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={200} height={200}/>
+                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={350} height={200}/>
                         <h6>Greek Salad</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
@@ -41,7 +41,7 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                     <div className="card">
-                        <img src={biryani} alt="Biryani" className="biryani" width={200} height={200}/>
+                        <img src={biryani} alt="Biryani" className="biryani" width={350} height={200}/>
                         <h6>Biryani</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
@@ -50,7 +50,7 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                     <div className="card">
-                        <img src={lemondessert} alt="Lemon Dessert" className="lemondessert" width={200} height={200}/>
+                        <img src={lemondessert} alt="Lemon Dessert" className="lemondessert" width={350} height={200}/>
                         <h6>Lemon Dessert</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
