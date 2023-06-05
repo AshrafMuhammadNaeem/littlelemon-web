@@ -1,5 +1,6 @@
 import React from "react";
 import imgfood from './images/imgfood.jpg'
+import greeksalad from './images/greeksalad.jpg'
 
 export const Main = () => {
     return(
@@ -20,7 +21,21 @@ export const Main = () => {
                 </div>
 
             </section>
-            <section>
+            <section className="container special-section">
+                <div className="jumbotron">
+                    <h2> This week's specials</h2>
+                    <button className="btn-primary">
+                        Order online
+                    </button>
+                </div>
+                <div className="cards">
+                    <div className="card">
+                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
+                    </div>
+
+                </div>
+
+
                 This weeks Specials
             </section>
             <section>
