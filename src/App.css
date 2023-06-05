@@ -105,6 +105,7 @@ header{
 
   .text {
     flex: 1;
+    margin-left: 20px;
   }
 
   h1 {
@@ -142,6 +143,7 @@ header{
     width: 400px;
     padding: 5px;
     z-index: 100;
+    margin-right: 16px;
 
   }
 
@@ -263,7 +265,7 @@ header{
     height: 100%;
 }
 
-/* styling the div of form with utility class*/
+/* styling the weeks special section*/
 .card{
     width: 350px;
     height: 515px;
@@ -276,6 +278,30 @@ header{
     margin: 10px;
 }
 
+.specials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.specials h2 {
+    color: black;
+    margin-left: 10px;
+}
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /* Stats section */
 
 .stats{
@@ -334,7 +360,6 @@ header{
     text-align: center;
     margin: 20px 10px 40px;
     transition: transform 0.3s ease-in;
-   
 }
 
 .languages .card h3{
@@ -350,7 +375,6 @@ header{
 
 .features-head img{
     width: 200px;
-    
 }
 
 .features-sub-head img{
@@ -498,8 +522,7 @@ code, pre{
 
 /* background colors */
 
-.bg-primary,
-.btn-primary{
+.bg-primary{
     background-color: var(--primary-color);
 }
 

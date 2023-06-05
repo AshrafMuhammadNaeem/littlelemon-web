@@ -24,10 +24,10 @@ export const Main = () => {
 
             </section>
             <section className="container special-section">
-                <div className="jumbotron">
-                    <h2> This week's specials</h2>
+                <div className="specials">
+                    <h2> This Week's Specials!</h2>
                     <button className="btn-primary">
-                        Order online
+                        Online Menu
                     </button>
                 </div>
                 <div className="cards">
@@ -70,9 +70,6 @@ export const Main = () => {
             <section>
                 About us
             </section>
-            
-            
-            
         </main>
     )
 }
