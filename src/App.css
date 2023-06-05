@@ -1,6 +1,6 @@
 /* https://favicon.io/ to generate fav icons for your projects */
 :root{
-    --primary-color: #23fcb5;
+    --primary-color: #495E57;
     --secondary-color: #52ffc6;
     --light-color: #b3ffe6;
     --dark-color: #4c2dfb;
@@ -94,7 +94,7 @@ header{
 /* Resturant section Intro*/
 
 .restaurant-section {
-    background-color: #f1f1f1;
+    background-color: #495E57;
     padding: 20px;
   }
   
@@ -136,10 +136,10 @@ header{
     text-align: right;
   }
   
-  img {
+  /* img {
     max-width: 100%;
     height: auto;
-  }
+  } */
   
 
 /* .showtext{

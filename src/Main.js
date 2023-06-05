@@ -4,8 +4,8 @@ import imgfood from './images/imgfood.jpg'
 export const Main = () => {
     return(
         <main>
-            <section className="Intro bg-primary my-2 py-2">
-                        <div className="restaurant-section">
+            <section className="restaurant-section">
+                        <div className="">
                 <div className="content">
                     <div className="text">
                     <h1>Little Lemon</h1>
@@ -14,7 +14,7 @@ export const Main = () => {
                     <button className="reserve-button">Reserve a Table</button>
                     </div>
                     <div className="image">
-                    <img src={imgfood} alt="Indian Food" width={300} height={500} />
+                    <img src={imgfood} alt="Indian Food" width={300} height={350} />
                     </div>
                 </div>
                 </div>
