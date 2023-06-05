@@ -33,6 +33,28 @@ export const Main = () => {
                         <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
                         <h6>Greek Salad</h6>
                         <p>$19.99</p>
+                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
+                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        </p>
+                        <p>Order a deliver</p> <i className="delivery-icon"></i>
+                    </div>
+                    <div className="card">
+                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
+                        <h6>Greek Salad</h6>
+                        <p>$19.99</p>
+                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
+                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        </p>
+                        <p>Order a deliver</p> <i className="delivery-icon"></i>
+                    </div>
+                    <div className="card">
+                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
+                        <h6>Greek Salad</h6>
+                        <p>$19.99</p>
+                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
+                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        </p>
+                        <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
 
                 </div>
