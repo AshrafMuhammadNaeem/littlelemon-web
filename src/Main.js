@@ -31,6 +31,8 @@ export const Main = () => {
                 <div className="cards">
                     <div className="card">
                         <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
+                        <h6>Greek Salad</h6>
+                        <p>$19.99</p>
                     </div>
 
                 </div>
