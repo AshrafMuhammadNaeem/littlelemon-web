@@ -17,7 +17,7 @@ export const Main = () => {
                     <button className="reserve-button">Reserve a Table</button>
                     </div>
                     <div className="image">
-                    <img src={imgfood} alt="Indian Food" width={300} height={350} />
+                    <img src={imgfood} alt="Indian Food"  width={300} height={350} />
                     </div>
                 </div>
                 </div>
