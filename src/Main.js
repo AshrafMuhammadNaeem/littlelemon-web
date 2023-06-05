@@ -1,6 +1,8 @@
 import React from "react";
 import imgfood from './images/imgfood.jpg'
 import greeksalad from './images/greeksalad.jpg'
+import biryani from './images/biryani.jpg'
+import lemondessert from './images/lemondessert.jpg'
 
 export const Main = () => {
     return(
@@ -30,7 +32,7 @@ export const Main = () => {
                 </div>
                 <div className="cards">
                     <div className="card">
-                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
+                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={200} height={200}/>
                         <h6>Greek Salad</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
@@ -39,8 +41,8 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                     <div className="card">
-                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
-                        <h6>Greek Salad</h6>
+                        <img src={biryani} alt="Biryani" className="biryani" width={200} height={200}/>
+                        <h6>Biryani</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
                            and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
@@ -48,8 +50,8 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                     <div className="card">
-                        <img src={greeksalad} alt="Greek Salad" className="grreksalad" width={250} height={250}/>
-                        <h6>Greek Salad</h6>
+                        <img src={lemondessert} alt="Lemon Dessert" className="lemondessert" width={200} height={200}/>
+                        <h6>Lemon Dessert</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
                            and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
