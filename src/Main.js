@@ -1,4 +1,5 @@
 import React from "react";
+import imgfood from './images/imgfood.jpg'
 
 export const Main = () => {
     return(
@@ -9,11 +10,11 @@ export const Main = () => {
                     <div className="text">
                     <h1>Little Lemon</h1>
                     <h2>Frankfurt</h2>
-                    <p>Subcontinent's food is known for its rich flavors, aromatic spices, and diverse range of dishes. At our restaurant, we proudly serve authentic Indian cuisine that will tantalize your taste buds. Experience the true essence of India through our carefully crafted menu, featuring traditional favorites and innovative creations. Whether you're craving spicy curries, savory biryanis, or delectable desserts, we have something to satisfy every palate. Reserve a table today and embark on a culinary journey through India.</p>
+                    <p>We are a family owned sub-continent restaurant, focused on traditional recipes served with a modern twist. </p>
                     <button className="reserve-button">Reserve a Table</button>
                     </div>
                     <div className="image">
-                    <img src="./images/restaurant-food" alt="Indian Food" />
+                    <img src={imgfood} alt="Indian Food" width={300} height={500} />
                     </div>
                 </div>
                 </div>

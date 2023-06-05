@@ -91,26 +91,75 @@ header{
     border-bottom: #555353 solid;
 }
 
-/* ShowText css */
+/* Resturant section Intro*/
 
-.showtext{
+.restaurant-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .reserve-button {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* .showtext{
     background-color: var(--primary-color);
     height: 300px;
     /* border: #333 solid; */
     /* margin-top: 10px; */
-    color: black;
+    /* color: black;
     position:relative;
-}
+} */
 
-.showtext .grid{
+/* .showtext .grid{
     /* To remove scroll that comes with some stylin like in line 98 use overflow property to get rid off */
-    overflow: visible;
+    /* overflow: visible;
     grid-template-columns: 58% 42%;
 }
 
 .showtext h1{
     font-size: 35px;
-}
+} */
 
 /* animation */
 
