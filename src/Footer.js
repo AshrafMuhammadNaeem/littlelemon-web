@@ -8,9 +8,9 @@ export const Footer = () => {
     return(
 
     <footer className="bg-dark my-3 py-3">
-        <div className="flex">
+        <div className="container flex">
             <div>
-             <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={300} width={200}/>
+             <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={350} width={200}/>
             
              <p>Copyright &copy; 2022</p>
             </div>
