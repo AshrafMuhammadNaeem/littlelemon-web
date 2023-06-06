@@ -34,8 +34,6 @@ export const Main = () => {
                     <div className="card-image">
                         <img src= {greeksalad} alt="GreekSalad" className= "dish"/>
                     </div>
-                
-    
                     <div className="card-content">
                         <h6>Greek Salad</h6>
                         <p>$19.99</p>
@@ -44,8 +42,6 @@ export const Main = () => {
                         </p>
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
-                   
-                  
                 </div>
             </section>
                     {/* <div className="card">
