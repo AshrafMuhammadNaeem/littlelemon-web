@@ -24,15 +24,19 @@ export const Main = () => {
 
             </section>
             <section className="container special-section">
-                <div className="specials">
+               <div className="specials">
                     <h2> This Week's Specials!</h2>
                     <button className="btn-primary">
                         Online Menu
                     </button>
                 </div>
                 <div className="cards">
-                    <div className="card">
-                        <img src={greeksalad} alt="Greek Salad" className="dish"/>
+                    <div className="card-image">
+                        <img src= {greeksalad} alt="GreekSalad" className= "dish"/>
+                    </div>
+                
+    
+                    <div className="card-content">
                         <h6>Greek Salad</h6>
                         <p>$19.99</p>
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
@@ -40,7 +44,11 @@ export const Main = () => {
                         </p>
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
-                    <div className="card">
+                   
+                  
+                </div>
+            </section>
+                    {/* <div className="card">
                         <img src={biryani} alt="Biryani" className="dish" />
                         <h6>Biryani</h6>
                         <p>$19.99</p>
@@ -57,13 +65,9 @@ export const Main = () => {
                            and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
                         </p>
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
-                    </div>
+                    </div> */}
+            
 
-                </div>
-
-
-                This weeks Specials
-            </section>
             <section>
                 Testimonials
             </section>
