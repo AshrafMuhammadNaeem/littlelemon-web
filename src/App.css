@@ -310,7 +310,7 @@ header{
     flex-direction: column;
 } */
 
-/* .specials {
+.specials {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -329,19 +329,14 @@ header{
     transition: 2s;
 }
 
-.cards{
+/* .cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
 
-.card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    flex: 1;
-  } */
+
 /* .dish{
     max-width: 100%;
     max-height: 100%;
