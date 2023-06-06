@@ -50,16 +50,16 @@ export const Main = () => {
 
                 <div className="card">
                     <div className="card-image">
-                        <img src= {greeksalad} alt="GreekSalad" className= "dish" />
+                        <img src= {biryani} alt="Biryani" className= "dish" />
                     </div>
                     <div className="card-content">
                         <div className="price">
-                        <h6>Greek Salad</h6>
-                        <p>$19.99</p>
+                        <h6>Biryani</h6>
+                        <p>$22.99</p>
                         </div>
 
-                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
-                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        <p>Cooked in traditional Desi ghee with crispy chicken and Pakistani special spices. 
+                            Served with special raita and extra chilled Coke.
                         </p>
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
@@ -67,16 +67,15 @@ export const Main = () => {
 
                 <div className="card">
                     <div className="card-image">
-                        <img src= {greeksalad} alt="GreekSalad" className= "dish" />
+                        <img src= {greeksalad} alt="Lemon Dessert" className= "dish" />
                     </div>
                     <div className="card-content">
                         <div className="price">
-                        <h6>Greek Salad</h6>
-                        <p>$19.99</p>
+                        <h6>Lemon Dessert</h6>
+                        <p>$15.99</p>
                         </div>
 
-                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
-                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagines.
                         </p>
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
