@@ -32,7 +32,7 @@ export const Main = () => {
                 </div>
                 <div className="card">
                     <div className="card-image">
-                        <img src= {greeksalad} alt="GreekSalad" className= "dish"/>
+                        <img src= {greeksalad} alt="GreekSalad" className= "dish" />
                     </div>
                     <div className="card-content">
                         <div className="price">

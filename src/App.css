@@ -43,7 +43,7 @@ p{
     margin: 10px 0;
 }
 
-img{
+header img{
     margin: 5px 0 ;
 
 }
@@ -270,19 +270,19 @@ header{
 .card {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     background-color: #D9D9D9;
     color: black;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 3px #D9D9D9; */
     /* box-shadow: -5px 10px 8px lightgreen; */
     /* padding: 15px; */
     /* margin: 10px; */
     /* Add other styles for the card */
   }
-  
+
   .card-image {
     flex: 1;
     /* Add other styles for the image container */
@@ -291,18 +291,22 @@ header{
   .card-image img {
     max-width: 100%;
     max-height: 100%;
+    overflow: hidden;
     /* Add other styles for the image */
   }
   
   .card-content {
     /* Add other styles for the card content */
+    margin: 0 5px;
   }
 
   .price{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* margin: 0 5px; */
   }
   
 /* .card{
