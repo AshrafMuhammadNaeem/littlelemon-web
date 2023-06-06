@@ -297,6 +297,13 @@ header{
   .card-content {
     /* Add other styles for the card content */
   }
+
+  .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   
 /* .card{
     width: 400px;
