@@ -67,7 +67,7 @@ export const Main = () => {
 
                 <div className="card">
                     <div className="card-image">
-                        <img src= {greeksalad} alt="Lemon Dessert" className= "dish" />
+                        <img src= {lemondessert} alt="Lemon Dessert" className= "dish" />
                     </div>
                     <div className="card-content">
                         <div className="price">
