@@ -30,7 +30,7 @@ export const Main = () => {
                         Online Menu
                     </button>
                 </div>
-                <div className="cards">
+                <div className="card">
                     <div className="card-image">
                         <img src= {greeksalad} alt="GreekSalad" className= "dish"/>
                     </div>
