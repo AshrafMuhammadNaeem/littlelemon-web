@@ -46,6 +46,40 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                 </div>
+
+                <div className="card">
+                    <div className="card-image">
+                        <img src= {greeksalad} alt="GreekSalad" className= "dish" />
+                    </div>
+                    <div className="card-content">
+                        <div className="price">
+                        <h6>Greek Salad</h6>
+                        <p>$19.99</p>
+                        </div>
+
+                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
+                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        </p>
+                        <p>Order a deliver</p> <i className="delivery-icon"></i>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="card-image">
+                        <img src= {greeksalad} alt="GreekSalad" className= "dish" />
+                    </div>
+                    <div className="card-content">
+                        <div className="price">
+                        <h6>Greek Salad</h6>
+                        <p>$19.99</p>
+                        </div>
+
+                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
+                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                        </p>
+                        <p>Order a deliver</p> <i className="delivery-icon"></i>
+                    </div>
+                </div>
             </section>
                     {/* <div className="card">
                         <img src={biryani} alt="Biryani" className="dish" />
