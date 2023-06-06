@@ -343,6 +343,12 @@ header{
     cursor: pointer;
 }
 
+.cards {
+    display: flex;
+    flex-direction: row;
+
+}
+
 /* .cards{
     display: flex;
     align-items: center;

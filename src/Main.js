@@ -23,13 +23,14 @@ export const Main = () => {
                 </div>
 
             </section>
-            <section className="container special-section">
+            <section className="container">
                <div className="specials">
                     <h2> This Week's Specials!</h2>
                     <button className="btn-primary">
                         Online Menu
                     </button>
                 </div>
+                <div className="cards">
                 <div className="card">
                     <div className="card-image">
                         <img src= {greeksalad} alt="GreekSalad" className= "dish" />
@@ -80,6 +81,9 @@ export const Main = () => {
                         <p>Order a deliver</p> <i className="delivery-icon"></i>
                     </div>
                 </div>
+
+                </div>
+                
             </section>
                     {/* <div className="card">
                         <img src={biryani} alt="Biryani" className="dish" />
