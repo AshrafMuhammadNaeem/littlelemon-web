@@ -286,8 +286,8 @@ header{
   .card-image {
     flex: 1;
     display: flex;
+    justify-content: center;
     
-    align-items: center;
     /* Add other styles for the image container */
   }
   
