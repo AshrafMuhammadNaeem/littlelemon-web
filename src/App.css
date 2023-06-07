@@ -3,7 +3,7 @@
     --primary-color: #495E57;
     --secondary-color: #F4CE14;
     --light-color: #b3ffe6;
-    --dark-color: #4c2dfb;
+    --secondary-color1: #D9D9D9;
     --success-color: #FBDABB;
     --error-color: #d9534f;
 
@@ -151,28 +151,6 @@ header{
     border-radius: 10px;
   }
 
-
-/* .showtext{
-    background-color: var(--primary-color);
-    height: 300px;
-    /* border: #333 solid; */
-    /* margin-top: 10px; */
-    /* color: black;
-    position:relative;
-} */
-
-/* .showtext .grid{
-    /* To remove scroll that comes with some stylin like in line 98 use overflow property to get rid off */
-    /* overflow: visible;
-    grid-template-columns: 58% 42%;
-}
-
-.showtext h1{
-    font-size: 35px;
-} */
-
-/* animation */
-
 .showtext-text{
     animation: slideInFromLeft 1s ease-in;
 }
@@ -272,7 +250,7 @@ header{
     flex-direction: column;
     width: 350px;
     height: 500px;
-    background-color: #D9D9D9;
+    background-color: var(--secondary-color1);
     color: black;
     border-radius: 10px;
     margin-top: 10px;
@@ -319,20 +297,6 @@ header{
     column-gap: 20px
   }
 
-/* .card{
-    width: 400px;
-    height: 515px;
-    background-color: #D9D9D9;
-    color: black;
-    border-radius: 10px;
-    border: 3px #D9D9D9;
-    box-shadow: -5px 10px 8px lightgreen;
-    padding: 15px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-} */
-
 .specials {
     display: flex;
     align-items: center;
@@ -361,24 +325,14 @@ header{
 
 }
 
-/* .cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+/* Testimonials Section */
 
+.Testimonials {
+    background-color: var(--secondary-color1);
+    margin-top: 25px;
+    padding: 10px 20px;
 
-/* .card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    flex: 1;
-  } */
-/* .dish{
-    max-width: 100%;
-    max-height: 100%;
 }
-/* Stats section */
 
 .stats{
     margin: 120px 0;
