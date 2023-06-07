@@ -79,7 +79,9 @@ export const Main = () => {
 
                         <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagines.
                         </p>
+                        <div className="delivery">
                         <p>Order a deliver</p> <FontAwesomeIcon icon={faMotorcycle} fontSize={20} />
+                        </div>
                     </div>
                 </div>
 
