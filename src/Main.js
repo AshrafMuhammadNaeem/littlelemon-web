@@ -92,27 +92,11 @@ export const Main = () => {
                 </div>
                 
             </section>
-                    {/* <div className="card">
-                        <img src={biryani} alt="Biryani" className="dish" />
-                        <h6>Biryani</h6>
-                        <p>$19.99</p>
-                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
-                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
-                        </p>
-                        <p>Order a deliver</p> <i className="delivery-icon"></i>
-                    </div>
-                    <div className="card">
-                        <img src={lemondessert} alt="Lemon Dessert" className="dish" />
-                        <h6>Lemon Dessert</h6>
-                        <p>$19.99</p>
-                        <p>The famous Greek salad of crispy lettuce, peppers, olives,
-                           and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
-                        </p>
-                        <p>Order a deliver</p> <i className="delivery-icon"></i>
-                    </div> */}
-            
-
-            <section>
+            {/* Testimonials Section */}
+            <section className="Testimonials">
+                <div className="cards">
+                    
+                </div>
                 Testimonials
             </section>
             <section>
