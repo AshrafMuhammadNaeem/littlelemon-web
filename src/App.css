@@ -312,6 +312,9 @@ header{
     align-items: center;
     /* margin: 0 5px; */
   }
+  .delivery {
+    display: flex;
+  }
 
 /* .card{
     width: 400px;
