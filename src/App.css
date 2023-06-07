@@ -302,7 +302,7 @@ header{
   }
   .card-content {
     /* Add other styles for the card content */
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .price{
@@ -316,7 +316,7 @@ header{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    column-gap: 50px
+    column-gap: 20px
   }
 
 /* .card{
