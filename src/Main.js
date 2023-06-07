@@ -46,7 +46,9 @@ export const Main = () => {
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
                            and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
                         </p>
+                        <div className="delivery">
                         <p>Order a deliver</p> <FontAwesomeIcon icon={faMotorcycle} fontSize={20} />
+                        </div>
                     </div>
                 </div>
 
@@ -63,7 +65,9 @@ export const Main = () => {
                         <p>Cooked in traditional Desi ghee with crispy chicken and Pakistani special spices. 
                             Served with special raita and extra chilled Coke.
                         </p>
+                        <div className="delivery">
                         <p>Order a deliver</p> <FontAwesomeIcon icon={faMotorcycle} fontSize={20} />
+                        </div>
                     </div>
                 </div>
 
