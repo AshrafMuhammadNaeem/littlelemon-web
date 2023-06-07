@@ -3,6 +3,8 @@ import imgfood from './images/imgfood.jpg'
 import greeksalad from './images/greeksalad.jpg'
 import biryani from './images/biryani.jpg'
 import lemondessert from './images/lemondessert.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export const Main = () => {
     return(
@@ -44,7 +46,7 @@ export const Main = () => {
                         <p>The famous Greek salad of crispy lettuce, peppers, olives,
                            and ours Frankfurt style feta cheese, garnished with crunchy garlic and rosemary croutons.
                         </p>
-                        <p>Order a deliver</p> <i className="delivery-icon"></i>
+                        <p>Order a deliver</p> <FontAwesomeIcon icon="fa-sharp fa-light fa-moped" />
                     </div>
                 </div>
 
