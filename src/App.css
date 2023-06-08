@@ -411,8 +411,12 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    column-gap: 80px;
 }
-
+.about-img img{
+    border-radius: 20px;
+    /* margin-top: 50px; */
+}
 
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
