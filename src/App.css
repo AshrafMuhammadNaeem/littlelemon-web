@@ -413,6 +413,18 @@ header{
     justify-content: space-between;
 }
 
+.about-img{
+    position: relative;
+}
+.img1{
+    position: absolute;
+    z-index: 1;
+}
+.img2{
+    position: absolute;
+    z-index: 2;
+}
+
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
