@@ -345,10 +345,14 @@ header{
     margin-top: 10px;
 }
 
-.stats{
-    margin: 120px 0;
-    /* also can use padding-top with 100px */
+.customer-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
 }
+
+
 
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
