@@ -334,6 +334,17 @@ header{
 
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    background-color: var(--secondary-color1);
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 .stats{
     margin: 120px 0;
     /* also can use padding-top with 100px */
