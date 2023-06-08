@@ -5,6 +5,7 @@ import biryani from './images/biryani.jpg'
 import lemondessert from './images/lemondessert.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
+import customer1 from './images/customer1.JPG';
 
 export const Main = () => {
     return(
@@ -93,10 +94,17 @@ export const Main = () => {
             </section>
             {/* Testimonials Section */}
             <section className="Testimonials">
-                <h1 id="review"> Testimonials </h1>
+                <h2 id="review"> Testimonials </h2>
                 <div className="cards">
+                    <h5> Rating </h5>
                     <div className="card-1">
-                        <h5> Rating </h5>
+                        <div className="customer-img">
+                        <img src={customer1} alt="customer" />
+                        </div>
+                        
+                        <h6> Biyyah</h6>
+                        <p> Great experience </p>
+                        
                     </div>
 
                 </div>
