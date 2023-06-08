@@ -96,15 +96,17 @@ export const Main = () => {
             <section className="Testimonials">
                 <h2 id="review"> Testimonials </h2>
                 <div className="">
-                    <h5> Rating </h5>
                     <div className="card-1">
-                        <div className="customer-img">
-                        <img src={customer1} alt="customer" width={50} />
+                        <div className="review-container">
+                           <h5> Rating </h5>
+                           <div className="customer-img">
+                             <img src={customer1} alt="customer" width={50} />
+                             <h6> Biyyah</h6>
+                           </div>
+                           <p> Great experience </p>
+
                         </div>
-                        
-                        <h6> Biyyah</h6>
-                        <p> Great experience </p>
-                        
+                       
                     </div>
 
                 </div>
