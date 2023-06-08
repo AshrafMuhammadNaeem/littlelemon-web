@@ -7,7 +7,7 @@ import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg
 export const Footer = () => {
     return(
 
-    <footer className="bg-dark my-3 py-3">
+    <footer className="bg-dark py-3">
         <div className="container flex">
             <div>
              <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={350} width={200}/>
