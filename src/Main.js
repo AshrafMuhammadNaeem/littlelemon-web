@@ -90,14 +90,17 @@ export const Main = () => {
                 </div>
 
                 </div>
-                
             </section>
             {/* Testimonials Section */}
             <section className="Testimonials">
+                <h1 id="review"> Testimonials </h1>
                 <div className="cards">
-                    
+                    <div className="card-1">
+                        <h5> Rating </h5>
+                    </div>
+
                 </div>
-                Testimonials
+                
             </section>
             <section>
                 About us
