@@ -98,7 +98,7 @@ export const Main = () => {
                 <div className="">
                     <div className="card-1">
                         <div className="review-container">
-                           <h5> Rating 5/5 </h5><FontAwesomeIcon icon={faStar} />
+                           <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
                              <img src={customer1} alt="customer" width={50} />
                              <h6> Biyyah</h6>
