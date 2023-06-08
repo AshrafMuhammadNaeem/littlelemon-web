@@ -98,7 +98,7 @@ export const Main = () => {
             </section>
             {/* Testimonials Section */}
             <section className="Testimonials">
-                <h2 id="review"> Testimonials </h2>
+                <h1 id="review"> Testimonials </h1>
                 <div className="cards">
                     <div className="card-1">
                         <div className="review-container">
@@ -117,21 +117,21 @@ export const Main = () => {
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
                              <img src={customer2} alt="customer" width={50} />
-                             <h6> Biyyah</h6>
+                             <h6> Sonya</h6>
                            </div>
-                           <p><em>Great experience </em> </p>
+                           <p><em>Loved it! </em> </p>
 
                         </div>
                     </div>
 
                     <div className="card-3">
                         <div className="review-container">
-                           <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
+                           <h5> Rating 4/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
                              <img src={customer3} alt="customer" width={50} />
-                             <h6> Biyyah</h6>
+                             <h6> Harun</h6>
                            </div>
-                           <p><em>Great experience </em> </p>
+                           <p><em>Amazing atmosphere</em> </p>
 
                         </div>
                     </div>
@@ -141,18 +141,22 @@ export const Main = () => {
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
                              <img src={customer4} alt="customer" width={50} />
-                             <h6> Biyyah</h6>
+                             <h6> Saleem</h6>
                            </div>
-                           <p><em>Great experience </em> </p>
+                           <p><em>Recommend this </em> </p>
 
                         </div>
                     </div>
 
                 </div>
-                
             </section>
             <section>
-                About us
+                <div className="about">
+                    <div>
+                        <h1>Little Lemon</h1>
+                        <h2>Frankfurt</h2>
+                    </div>
+                </div>
             </section>
         </main>
     )
