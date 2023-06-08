@@ -401,14 +401,16 @@ header{
 
 /* About section */
 
+.about-section {
+    background-color: var(--primary-color);
+    padding: 50px;
+}
+
 .about {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-color);
-    /* margin: 0 50px; */
-    padding: 60px;
 }
 
 .grid-3{
