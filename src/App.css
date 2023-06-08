@@ -406,6 +406,9 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--primary-color);
+    /* margin: 0 50px; */
+    padding: 60px;
 }
 
 .grid-3{
