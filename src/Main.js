@@ -95,11 +95,11 @@ export const Main = () => {
             {/* Testimonials Section */}
             <section className="Testimonials">
                 <h2 id="review"> Testimonials </h2>
-                <div className="cards">
+                <div className="">
                     <h5> Rating </h5>
                     <div className="card-1">
                         <div className="customer-img">
-                        <img src={customer1} alt="customer" />
+                        <img src={customer1} alt="customer" width={50} />
                         </div>
                         
                         <h6> Biyyah</h6>
