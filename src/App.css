@@ -2,10 +2,10 @@
 :root{
     --primary-color: #495E57;
     --secondary-color: #F4CE14;
-    --light-color: #b3ffe6;
+    --light-color: #EDEFEE;
     --secondary-color1: #D9D9D9;
     --success-color: #FBDABB;
-    --error-color: #d9534f;
+    --success-color1: #EE9972;
 
 
 
@@ -340,6 +340,39 @@ header{
     width: 250px;
     height: 200px;
     background-color: var(--success-color);
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card-2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card-3{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: var(--light-color);
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card-4{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: var(--success-color1);
     color: black;
     border-radius: 10px;
     margin-top: 10px;
