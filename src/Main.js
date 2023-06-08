@@ -4,7 +4,7 @@ import greeksalad from './images/greeksalad.jpg'
 import biryani from './images/biryani.jpg'
 import lemondessert from './images/lemondessert.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
+import { faMotorcycle, faStar } from '@fortawesome/free-solid-svg-icons';
 import customer1 from './images/customer1.JPG';
 
 export const Main = () => {
@@ -98,12 +98,12 @@ export const Main = () => {
                 <div className="">
                     <div className="card-1">
                         <div className="review-container">
-                           <h5> Rating </h5>
+                           <h5> Rating 5/5 </h5><FontAwesomeIcon icon={faStar} />
                            <div className="customer-img">
                              <img src={customer1} alt="customer" width={50} />
                              <h6> Biyyah</h6>
                            </div>
-                           <p> Great experience </p>
+                           <p><em>Great experience </em> </p>
 
                         </div>
                        
