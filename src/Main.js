@@ -148,7 +148,7 @@ export const Main = () => {
 
                 </div>
             </section>
-            <section>
+            <section className="about-section">
                 <div className="about">
                     <div>
                         <h1>Little Lemon</h1>
