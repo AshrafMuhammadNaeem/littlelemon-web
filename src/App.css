@@ -330,7 +330,7 @@ header{
 .Testimonials {
     background-color: var(--secondary-color1);
     margin-top: 25px;
-    padding: 10px 20px;
+    padding: 120px 75px;
 
 }
 
@@ -345,11 +345,19 @@ header{
     margin-top: 10px;
 }
 
+.review-container{
+    margin: 40px 15px 50px 30px;
+}
+
 .customer-img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
+}
+.customer-img img {
+    border-radius: 100%;
+    margin-top: 5px;
 }
 
 
