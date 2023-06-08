@@ -11,10 +11,9 @@ export const Footer = () => {
         <div className="container flex">
             <div>
              <img src= {require("./images/Asset 18@4x.png")} alt="Logo" height={350} width={200}/>
-            
              <p>Copyright &copy; 2022</p>
             </div>
-        
+
             <nav className="">
                <h4>Doormat <br/> Navigation</h4>
              <ul>
