@@ -158,7 +158,7 @@ export const Main = () => {
                         </p>
                     </div>
                     <div className="about-img">
-                        <img src= {require("./images/Mario and Adrian A.jpg")} alt="Naeem & Ahmad photo" width={250} className="img1"/>
+                        <img src= {require("./images/Mario and Adrian A.jpg")} alt="Naeem & Ahmad photo" width={500} className="img1"/>
                     </div>
                 </div>
             </section>
