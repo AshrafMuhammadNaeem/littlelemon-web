@@ -6,6 +6,10 @@ import lemondessert from './images/lemondessert.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMotorcycle, faStar } from '@fortawesome/free-solid-svg-icons';
 import customer1 from './images/customer1.JPG';
+import customer2 from './images/customer2.JPG';
+import customer3 from './images/customer3.JPG';
+import customer4 from './images/customer4.JPG';
+
 
 export const Main = () => {
     return(
