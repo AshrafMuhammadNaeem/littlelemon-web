@@ -112,11 +112,11 @@ export const Main = () => {
                         </div>
                     </div>
 
-                    <div className="card-1">
+                    <div className="card-2">
                         <div className="review-container">
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
-                             <img src={customer1} alt="customer" width={50} />
+                             <img src={customer2} alt="customer" width={50} />
                              <h6> Biyyah</h6>
                            </div>
                            <p><em>Great experience </em> </p>
@@ -124,11 +124,11 @@ export const Main = () => {
                         </div>
                     </div>
 
-                    <div className="card-1">
+                    <div className="card-3">
                         <div className="review-container">
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
-                             <img src={customer1} alt="customer" width={50} />
+                             <img src={customer3} alt="customer" width={50} />
                              <h6> Biyyah</h6>
                            </div>
                            <p><em>Great experience </em> </p>
@@ -136,11 +136,11 @@ export const Main = () => {
                         </div>
                     </div>
 
-                    <div className="card-1">
+                    <div className="card-4">
                         <div className="review-container">
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
                            <div className="customer-img">
-                             <img src={customer1} alt="customer" width={50} />
+                             <img src={customer4} alt="customer" width={50} />
                              <h6> Biyyah</h6>
                            </div>
                            <p><em>Great experience </em> </p>
