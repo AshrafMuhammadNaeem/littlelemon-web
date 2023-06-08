@@ -159,6 +159,9 @@ export const Main = () => {
                         Welcome to our restaurant! Owned by Naeem and Ahmad, our culinary haven is nestled in the vibrant city of Frankfurt. With a passion for gastronomy, we bring together the best of two worlds - Indian and Mediterranean cuisine. Our extensive menu features a tantalizing fusion of flavors, offering a delightful culinary journey for all palates. Naeem's expertise as a seasoned chef ensures each dish is crafted with love and precision, showcasing the authentic essence of both cultures. Join us for a memorable dining experience where the aromas, spices, and warm hospitality transport you to a world of culinary bliss.
                         </p>
                     </div>
+                    <div className="about-img">
+                        <img src= {require("./images/chef1.jpg")} alt="Naeem photo" width={250} />
+                    </div>
                 </div>
             </section>
         </main>
