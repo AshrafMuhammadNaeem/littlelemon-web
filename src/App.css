@@ -399,7 +399,14 @@ header{
     margin-top: 5px;
 }
 
+/* About section */
 
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
