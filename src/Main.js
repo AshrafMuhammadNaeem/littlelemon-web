@@ -95,7 +95,7 @@ export const Main = () => {
             {/* Testimonials Section */}
             <section className="Testimonials">
                 <h2 id="review"> Testimonials </h2>
-                <div className="">
+                <div className="cards">
                     <div className="card-1">
                         <div className="review-container">
                            <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
@@ -106,7 +106,42 @@ export const Main = () => {
                            <p><em>Great experience </em> </p>
 
                         </div>
-                       
+                    </div>
+
+                    <div className="card-1">
+                        <div className="review-container">
+                           <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
+                           <div className="customer-img">
+                             <img src={customer1} alt="customer" width={50} />
+                             <h6> Biyyah</h6>
+                           </div>
+                           <p><em>Great experience </em> </p>
+
+                        </div>
+                    </div>
+
+                    <div className="card-1">
+                        <div className="review-container">
+                           <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
+                           <div className="customer-img">
+                             <img src={customer1} alt="customer" width={50} />
+                             <h6> Biyyah</h6>
+                           </div>
+                           <p><em>Great experience </em> </p>
+
+                        </div>
+                    </div>
+
+                    <div className="card-1">
+                        <div className="review-container">
+                           <h5> Rating 5/5 <FontAwesomeIcon icon={faStar} /></h5>
+                           <div className="customer-img">
+                             <img src={customer1} alt="customer" width={50} />
+                             <h6> Biyyah</h6>
+                           </div>
+                           <p><em>Great experience </em> </p>
+
+                        </div>
                     </div>
 
                 </div>
