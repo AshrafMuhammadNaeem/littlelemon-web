@@ -6,16 +6,16 @@ export const Header = () => {
     <header className="container flex">
       <img src={logo1} alt="Logo" width={350}></img>
       <nav className='tabs'>
-      <ul className='tab'>
-        <li><a href='#'> Home</a> </li>
-        <li><a href='#'> About</a> </li>
-        <li><a href='#'> Menu</a> </li>
-        <li><a href=''> Reservations</a> </li>
-        <li><a href=''> Order</a> </li>
-        <li><a href=''> LogIn</a> </li>
-    </ul>
+        <ul className='tab'>
+          <li><a href='#'> Home</a> </li>
+          <li><a href='#'> About</a> </li>
+          <li><a href='#'> Menu</a> </li>
+          <li><a href=''> Reservations</a> </li>
+          <li><a href=''> Order</a> </li>
+          <li><a href=''> LogIn</a> </li>
+        </ul>
 
-    </nav>
+      </nav>
     </header>
   )
 }
