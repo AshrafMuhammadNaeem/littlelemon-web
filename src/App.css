@@ -413,6 +413,9 @@ header{
     justify-content: space-between;
     column-gap: 80px;
 }
+.about p{
+    color: white;
+}
 .about-img img{
     border-radius: 20px;
     /* margin-top: 50px; */
