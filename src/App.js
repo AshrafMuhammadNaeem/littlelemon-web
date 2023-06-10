@@ -4,6 +4,7 @@ import './App.css';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Main } from './Main';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
 
       <Header/>
       <Main/>
-      <About />
+      <Routes>
+         <Route path="/about" element={<About />}></Route>
+      </Routes>
       <Footer/>
 
     </>
