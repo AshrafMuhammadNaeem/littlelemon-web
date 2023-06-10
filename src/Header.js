@@ -10,10 +10,10 @@ export const Header = () => {
         <ul className='tab'>
           <li><Link to="/" className='nav-item'> Home</Link> </li>
           <li><Link to="/about" className='nav-item'> About</Link> </li>
-          <li><a href='#'> Menu</a> </li>
-          <li><a href=''> Reservations</a> </li>
-          <li><a href=''> Order</a> </li>
-          <li><a href=''> LogIn</a> </li>
+          <li><Link to="/menu" className='nav-item'> Menu</Link> </li>
+          <li><Link to="/reservation" className='nav-item'> Reservations</Link> </li>
+          <li><Link to="/order" className='nav-item'> Order</Link> </li>
+          <li><Link to="/login" className='nav-item'> LogIn</Link> </li>
         </ul>
 
       </nav>
