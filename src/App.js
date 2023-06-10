@@ -10,13 +10,15 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
+     
 
-      <Header/>
-      <Main/>
-      <Routes>
+       <Header/>
+       <Main/>
+       <Routes>
          <Route path="/about" element={<About />}></Route>
-      </Routes>
-      <Footer/>
+       </Routes>
+       <Footer/>
+       
 
     </>
   );
