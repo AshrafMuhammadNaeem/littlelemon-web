@@ -148,7 +148,7 @@ export const Main = () => {
 
                 </div>
             </section>
-            <section className="about-section">
+            {/* <section className="about-section">
                 <div className="about">
                     <div>
                         <h1>Little Lemon</h1>
@@ -161,7 +161,7 @@ export const Main = () => {
                         <img src= {require("./images/Mario and Adrian A.jpg")} alt="Naeem & Ahmad photo" width={500} className="img1"/>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </main>
     )
 }
