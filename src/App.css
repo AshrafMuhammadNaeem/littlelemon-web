@@ -1,4 +1,8 @@
-/* https://favicon.io/ to generate fav icons for your projects */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
 :root{
     --primary-color: #495E57;
     --secondary-color: #F4CE14;
