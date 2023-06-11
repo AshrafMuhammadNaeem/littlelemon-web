@@ -10,7 +10,6 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-     
 
        <Header/>
        <Main/>
@@ -22,7 +21,6 @@ function App() {
          <Route path="/logIn" element={<About />}></Route>
        </Routes>
        <Footer/>
-       
 
     </>
   );
