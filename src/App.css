@@ -681,6 +681,11 @@ code, pre{
     margin: 0 15px;
     font-size: 50px;
 }
+.footer-nav{
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+
+}
 
 /* footer img {
     margin: 0 auto;
