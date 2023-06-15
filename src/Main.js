@@ -9,6 +9,8 @@ import customer1 from './images/customer1.JPG';
 import customer2 from './images/customer2.JPG';
 import customer3 from './images/customer3.JPG';
 import customer4 from './images/customer4.JPG';
+import { Link } from "react-router-dom";
+
 
 
 export const Main = () => {
@@ -20,7 +22,7 @@ export const Main = () => {
                     <h1>Little Lemon</h1>
                     <h2>Frankfurt</h2>
                     <p>We are a family owned sub-continent restaurant, focused on traditional recipes served with a modern twist. </p>
-                    <button className="reserve-button">Reserve a Table</button>
+                     <Link to="/reservation"> <button className="reserve-button">Reserve a Table</button> </Link>
                  </div>
                  <div className="image">
                     <img src={imgfood} alt="Indian Food"  width={300} height={350} />
