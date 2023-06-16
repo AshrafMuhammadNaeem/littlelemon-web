@@ -13,15 +13,16 @@ function App() {
     <>
 
        <Header/>
-       <Main/>
-       <Routes>
-       <Route path="/about" element={<About />}></Route>
-         <Route path="/about" element={<About />}></Route>
-         <Route path="/menu" element={<About />}></Route>
-         <Route path="/reservation" element={<BookingPage/>}></Route>
-         <Route path="/order" element={<About />}></Route>
-         <Route path="/logIn" element={<About />}></Route>
-       </Routes>
+       <Main>
+          <Routes>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/menu" element={<About />}></Route>
+            <Route path="/reservation" element={<BookingPage/>}></Route>
+            <Route path="/order" element={<About />}></Route>
+            <Route path="/logIn" element={<About />}></Route>
+          </Routes>
+        </Main>
        <Footer/>
 
     </>
