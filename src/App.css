@@ -448,8 +448,6 @@ header{
     /* I solved this problem of margin not being applied to text */
     max-width: 500px;
     margin: auto;
-    
-    
 }
 
 .stats .grid h3{
@@ -466,7 +464,6 @@ header{
 .cli .grid{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    
 }
 
 .cli .grid img{
