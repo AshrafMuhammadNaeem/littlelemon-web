@@ -14,13 +14,22 @@ function App() {
 
        <Header/>
        <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/about" element={<Main><About /></Main>} />
-        <Route path="/menu" element={<Main><About /></Main>} />
-        <Route path="/reservation" element={<Main><BookingPage /></Main>} />
-        <Route path="/order" element={<Main><About /></Main>} />
-        <Route path="/logIn" element={<Main><About /></Main>} />
-       </Routes>
+        <Route
+          path="/"
+          element={
+            <Main>
+              <Routes>
+                <Route path="/" element={<About />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/menu" element={<About />} />
+                <Route path="/reservation" element={<BookingPage />} />
+                <Route path="/order" element={<About />} />
+                <Route path="/logIn" element={<About />} />
+              </Routes>
+            </Main>
+          }
+        />
+      </Routes>
        <Footer/>
 
     </>
