@@ -21,6 +21,8 @@ export  const  BookingForm = () => {
                     <select id="occasion">
                         <option>Birthday</option>
                         <option>Anniversary</option>
+                        <option>Work Promotion</option>
+                        <option>Engagement</option>
                     </select>
                     <input type="submit" value="Make Your reservation"/>
             </form>
