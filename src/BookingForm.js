@@ -3,7 +3,7 @@ import React from "react";
 export  const  BookingForm = () => {
     return(
       <div className="booking-form">
-            <form>
+            <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date"/>
                     <label htmlFor="res-time">Choose time</label>
