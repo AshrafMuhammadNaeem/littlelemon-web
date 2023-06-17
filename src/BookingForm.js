@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 
 export  const  BookingForm = () => {
+    const [date, setDate] = useState()
 
     const handleSubmit = (e) => {
         e.preventDefault();
