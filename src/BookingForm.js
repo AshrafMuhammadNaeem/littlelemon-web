@@ -1,9 +1,14 @@
 import React from "react";
 
 export  const  BookingForm = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form submitted!");
+    }
     return(
       <div className="booking-form">
-            <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
+            <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date"/>
                     <label htmlFor="res-time">Choose time</label>
