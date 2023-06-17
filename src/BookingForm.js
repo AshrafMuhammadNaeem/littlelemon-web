@@ -3,6 +3,9 @@ import { useState } from "react";
 
 export  const  BookingForm = () => {
     const [date, setDate] = useState()
+    const [time, setTime] = useState("17:00")
+    const [guestnumber, setGuestnumber] = useState("1")
+    const [occasion, setOccasion] = useState("Birthday")
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,22 +17,22 @@ export  const  BookingForm = () => {
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" value={date} onChange={e => setDate (e.target.value)}/>
                     <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time ">
-                        <option>17:00</option>
-                        <option>18:00</option>
-                        <option>19:00</option>
-                        <option>20:00</option>
-                        <option>21:00</option>
-                        <option>22:00</option>
+                    <select id="res-time " value={time} onChange={(e) => setTime(e.target.value)}>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
                     </select>
                     <label htmlFor="guests">Number of guests</label>
-                    <input type="number" placeholder="1" min="1" max="10" id="guests"/>
+                    <input type="number" placeholder="1" min="1" max="10" id="guests" value={guestnumber} onChange={(e) => setGuestnumber(e.target.value)}/>
                     <label htmlFor="occasion">Occasion</label>
-                    <select id="occasion">
-                        <option>Birthday</option>
-                        <option>Anniversary</option>
-                        <option>Work Promotion</option>
-                        <option>Engagement</option>
+                    <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Work Promotion">Work Promotion</option>
+                        <option value="Engagement">Engagement</option>
                     </select>
                     <input type="submit" value="Make Your reservation"/>
             </form>
