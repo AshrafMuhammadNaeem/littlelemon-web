@@ -10,6 +10,14 @@ export  const  BookingForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted!");
+        console.log(date);
+        console.log(guestnumber);
+        console.log(occasion);
+        setDate();
+        setTime("17:00")
+        setGuestnumber("1")
+        setOccasion("Birthday");
+        
     }
     return(
       <div className="booking-form">
