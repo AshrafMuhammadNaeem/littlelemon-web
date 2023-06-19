@@ -12,9 +12,7 @@ export  const  BookingForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted!");
-        console.log(date);
-        console.log(guestnumber);
-        console.log(occasion);
+        alert("Reservation form successfully submitted")
         setDate();
         setTime("17:00")
         setGuestnumber("1")
@@ -29,7 +27,7 @@ export  const  BookingForm = () => {
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time " value={time} onChange={(e) => setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
-                                          <option key={availableTime}>{availableTime}</option>
+                                          <option value={availableTime}>{availableTime}</option>
 
                                         ))}
                     </select>
