@@ -1,12 +1,21 @@
-import React, {useState} from 'react'
+import React, {useState, useReducer} from 'react'
 import { BookingForm } from './BookingForm'
 
 
+function reducer(selectedDate) {
+    
+  return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+}
+
+
 export const BookingPage = () => {
-  const [time, setTime] = useState("17:00")
+
+  const initialState = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
+  const [time, dispatch] = useReducer(reducer, initialState)
+
   return (
     <>
-      <BookingForm time={time} setTime={setTime}/>
+      <BookingForm time={time} dispatch={dispatch}/>
     </>
   )
 }
