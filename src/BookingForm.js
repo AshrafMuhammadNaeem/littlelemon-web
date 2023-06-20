@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 
-export  const  BookingForm = () => {
+export  const  BookingForm = (props) => {
 
     const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
     const [date, setDate] = useState()
-    const [time, setTime] = useState("17:00")
+    // const [time, setTime] = useState("17:00")
     const [guestnumber, setGuestnumber] = useState("1")
     const [occasion, setOccasion] = useState("Birthday")
 
@@ -14,7 +14,7 @@ export  const  BookingForm = () => {
         console.log("Form submitted!");
         alert("Reservation form successfully submitted")
         setDate();
-        setTime("17:00")
+        // setTime("17:00")
         setGuestnumber("1")
         setOccasion("Birthday");
         
@@ -25,7 +25,7 @@ export  const  BookingForm = () => {
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" value={date} onChange={e => setDate (e.target.value)}/>
                     <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time " value={time} onChange={(e) => setTime(e.target.value)}>
+                    <select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
                                           <option value={availableTime}>{availableTime}</option>
 
