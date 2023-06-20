@@ -14,7 +14,7 @@ export  const  BookingForm = (props) => {
         console.log("Form submitted!");
         alert("Reservation form successfully submitted")
         setDate();
-        // setTime("17:00")
+        props.setTime("17:00")
         setGuestnumber("1")
         setOccasion("Birthday");
         
