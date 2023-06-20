@@ -13,7 +13,9 @@ import { Link } from "react-router-dom";
 
 
 
+
 export const Main = () => {
+
     return(
         <main>
             <section className="restaurant-section">
