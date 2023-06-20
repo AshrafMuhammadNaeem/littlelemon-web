@@ -23,7 +23,7 @@ export  const  BookingForm = (props) => {
       <div className="booking-form">
             <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
                     <label htmlFor="res-date">Choose date</label>
-                    <input type="date" id="res-date" value={date} onChange={e => {setDate (e.target.value) , dispatch(e.target.value);}} />
+                    <input type="date" id="res-date" value={date} onChange={e => setDate (e.target.value)}/>
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
