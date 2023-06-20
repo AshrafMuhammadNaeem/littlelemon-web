@@ -1,12 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BookingForm } from './BookingForm'
 
 
 export const BookingPage = () => {
+  const [time, setTime] = useState("17:00")
   return (
     <>
-      <BookingForm />
-        
+      <BookingForm time={time} setTime={setTime}/>
     </>
   )
 }
