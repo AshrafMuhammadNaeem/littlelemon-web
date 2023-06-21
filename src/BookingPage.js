@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useReducer} from 'react'
 import { BookingForm } from './BookingForm'
 
 function updateTimes(state, selectedDate) {
@@ -17,9 +17,10 @@ function initializeTimes() {
 
 export const BookingPage = () => {
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
+  const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
   return (
     <>
-      <BookingForm time={time} setTime={dispatch} />
+      <BookingForm time={time} dispatch={dispatch} availableTimes={availableTimes} />
     </>
   )
 }
