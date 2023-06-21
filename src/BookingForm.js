@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 
 export  const  BookingForm = (props) => {
+    const { availableTimes, dispatch } = props;
 
-    const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
+    // const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
     const [date, setDate] = useState()
     // const [time, setTime] = useState("17:00")
     const [guestnumber, setGuestnumber] = useState("1")
@@ -14,7 +15,7 @@ export  const  BookingForm = (props) => {
         console.log("Form submitted!");
         alert("Reservation form successfully submitted")
         setDate();
-        props.setTime("17:00")
+        // props.setTime("17:00")
         setGuestnumber("1")
         setOccasion("Birthday");
         
@@ -23,7 +24,7 @@ export  const  BookingForm = (props) => {
       <div className="booking-form">
             <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
                     <label htmlFor="res-date">Choose date</label>
-                    <input type="date" id="res-date" value={date} onChange={e => setDate (e.target.value)}/>
+                    <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
                     <label htmlFor="res-time">Choose time</label>
                     <select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
