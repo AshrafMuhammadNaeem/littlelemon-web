@@ -22,7 +22,7 @@ export  const  BookingForm = (props) => {
     }
     return(
       <div className="booking-form">
-        <h2> Booking Form</h2>
+        <h2> Booking Form </h2>
             <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
