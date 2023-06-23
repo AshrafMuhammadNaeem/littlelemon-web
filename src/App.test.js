@@ -8,9 +8,10 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-
-test('Renders the BookingForm heading', () => {
-    render(<BookingForm />);
-    const headingElement = screen.getByText("Booking Form");
-    expect(headingElement).toBeInTheDocument();
-})
+//  Test for BookingForm
+test("find the BookingForm heading", () =>{
+  render(<BookingForm />);
+  // add heading in a vairiable
+  const headingElement = screen.getByText("Booking Form");
+  expect(headingElement).toBeInTheDocument();
+});
