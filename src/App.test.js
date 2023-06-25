@@ -1,7 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
 import { BookingForm } from './BookingForm';
-import { initializeTimes, updateTimes } from "./reducerFunctions";
+import { BookingPage } from './BookingPage';
+import { initializeTimes, updateTimes } from "./BookingPage";
 
 test('renders learn react link', () => {
   render(<App />);
@@ -11,7 +12,7 @@ test('renders learn react link', () => {
 
 //  Test for BookingForm
 test("find the BookingForm heading", () =>{
-  render(<BookingForm />);
+  render(<BookingPage />);
   // add heading in a vairiable
   const headingElement = screen.getByText("Booking Form");
   expect(headingElement).toBeInTheDocument();
@@ -20,6 +21,7 @@ test("find the BookingForm heading", () =>{
 
 // Unit test for initializeTimes
 test("initializeTimes returns the expected initial state", () => {
+  // render(<BookingForm />);
   const expectedInitialState = [
     '17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'
   ];
@@ -29,6 +31,7 @@ test("initializeTimes returns the expected initial state", () => {
 
 // Unit test for updateTimes
 test("updateTimes returns the same state value", () => {
+  // render(<BookingForm />);
   const state = [
     '17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'
   ];
