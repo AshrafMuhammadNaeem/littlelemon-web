@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import styles from './BookingForm.css'
 
 export  const  BookingForm = (props) => {
     const { availableTimes, dispatch } = props;
@@ -23,7 +24,10 @@ export  const  BookingForm = (props) => {
     return(
       <div className="booking-form">
         <h2> Booking Form </h2>
-            <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '200px', gap: '20px'}}>
+            <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '00px', gap: '20px'}}>
+               <select>
+                <option>Indoor seatin</option>
+               </select>
                     <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
                     <label htmlFor="res-time">Choose time</label>
