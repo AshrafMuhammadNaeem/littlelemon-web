@@ -22,22 +22,24 @@ export  const  BookingForm = (props) => {
         
     }
     return(
-      <div className="booking-form">
+      <div >
         <h2> Booking Form </h2>
-            <form onSubmit={handleSubmit}  style={{display: 'grid', maxWidth: '00px', gap: '20px'}}>
-               <select>
-                <option>Indoor seatin</option>
-               </select>
-                    <label htmlFor="res-date">Choose date</label>
+            <form onSubmit={handleSubmit} className="booking-form" >
+              <div>
+              <label htmlFor="res-date">Choose date</label>
                     <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
-                    <label htmlFor="res-time">Choose time</label>
+              </div>
+              <div>
+              <label htmlFor="res-time">Choose time</label>
                     <select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
                                           <option value={availableTime}>{availableTime}</option>
 
                                         ))}
                     </select>
-                    <label htmlFor="guests">Number of guests</label>
+              </div>
+              <div>
+              <label htmlFor="guests">Number of guests</label>
                     <input type="number" placeholder="1" min="1" max="10" id="guests" value={guestnumber} onChange={(e) => setGuestnumber(e.target.value)}/>
                     <label htmlFor="occasion">Occasion</label>
                     <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
@@ -46,6 +48,21 @@ export  const  BookingForm = (props) => {
                         <option value="Work Promotion">Work Promotion</option>
                         <option value="Engagement">Engagement</option>
                     </select>
+              </div>
+                    
+                   
+                    <fieldset className="seating">
+                    <div>
+                    <label htmlFor="indoor">Indoor seating</label>
+                    <input type="radio" id="indoor" name="indoor seating" value= "Indoor Seating"/>
+                    </div>
+                    <div>
+                    <label htmlFor="indoor">Outdoor seating</label>
+                    <input type="radio" id="outdoor" name="outdoor seating" value= "Outdoor Seating"/>
+                    </div>
+                     </fieldset>
+                    
+                    
                     <input type="submit" value="Make Your reservation"/>
             </form>
       </div>

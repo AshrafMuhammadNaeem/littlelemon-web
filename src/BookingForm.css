@@ -1,5 +1,16 @@
-.booking-form {
+.booking-form{
     background-color: #495E57;
     color: white;
-    
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+
+}
+/* .seating{
+    display: flex;
+    flex-direction: row;
+} */
+
+.indoor{
+    margin:5px 10px;
 }
