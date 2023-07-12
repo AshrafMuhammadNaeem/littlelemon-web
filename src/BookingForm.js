@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import styles from './BookingForm.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faClock, faChampagneGlasses, faPerson } from '@fortawesome/free-solid-svg-icons';
 
 export  const  BookingForm = (props) => {
     const { availableTimes, dispatch } = props;
