@@ -20,6 +20,23 @@
     align-items: center;
     margin-bottom: 3px;
   }
+
+  #res-date{
+    padding: 10px;
+    width: 100%;
+  }
+/* how to put icon in input element */
+  .icon-wraper{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+  top: 65%;
+  right: 10px;
+  transform: translateY(-30%);
+  color: black;
+  align-items: center;
+  }
 /* .seating{
     display: flex;
     flex-direction: row;
