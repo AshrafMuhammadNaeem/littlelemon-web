@@ -29,8 +29,8 @@ export  const  BookingForm = (props) => {
             <form onSubmit={handleSubmit}  >
               <div className="form"> 
               <div>
-              <label htmlFor="res-date">Choose date</label>
-                    <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
+              <label htmlFor="res-date"> <FontAwesomeIcon icon={faCalendar} fontSize={20} />Choose date</label>
+              <FontAwesomeIcon icon={faCalendar} fontSize={20} /> <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
