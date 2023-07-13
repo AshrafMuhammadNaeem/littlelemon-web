@@ -28,13 +28,13 @@ export  const  BookingForm = (props) => {
         <h2> Booking Form </h2>
             <form onSubmit={handleSubmit}  >
               <div className="form"> 
-              <div>
-              <label htmlFor="res-date"> <FontAwesomeIcon icon={faCalendar} fontSize={20} />Choose date</label>
-              <FontAwesomeIcon icon={faCalendar} fontSize={20} /> <input type="date" id="res-date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
+              <div className="icon-wraper">
+              <label htmlFor="res-date"> Choose date</label>
+              <FontAwesomeIcon icon={faCalendar} fontSize={20} className="icon" /> <input type="date" id="res-date" placeholder="Select date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
+                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
                                         {availableTimes.map((availableTime) => (
                                           <option value={availableTime}>{availableTime}</option>
 
