@@ -23,7 +23,7 @@
 
   #res-date{
     padding: 10px;
-    width: 100%;
+    width: 300px;
     text-align: center;
     cursor: pointer;
     
@@ -36,16 +36,16 @@
   .icon{
   position: absolute;
   top: 65%;
-  right: 330px;
+  right: 400px;
   transform: translateY(-30%);
-  color: grey;
+  color: black;
   align-items: center;
   }
 
   .icon-2{
     position: absolute;
     top: 65%;
-    right: 30px;
+    right: 130px;
     transform: translateY(-30%);
     color: grey;
     align-items: center;
