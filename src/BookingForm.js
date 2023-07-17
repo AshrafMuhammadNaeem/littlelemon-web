@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import styles from './BookingForm.css'
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import './BookingForm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faClock, faChampagneGlasses, faPerson } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export  const  BookingForm = (props) => {
     const { availableTimes, dispatch } = props;
@@ -29,8 +31,10 @@ export  const  BookingForm = (props) => {
             <form onSubmit={handleSubmit}  >
               <div className="form"> 
               <div className="icon-wraper">
-              <label htmlFor="res-date"> Choose date</label>
-              <FontAwesomeIcon icon={faCalendar} fontSize={20} className="icon" /> <input type="date" id="res-date" placeholder="Select date" value={date} onChange={(e) => { setDate(e.target.value); dispatch(e.target.value); }}/>
+              <label htmlFor="res-date"> Date</label>
+              <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
+               <DatePicker dateFormat="MM/dd/yyyy" id="res-date" placeholder="Select Date" selected={date} onChange={(e) => { setDate(e.target.selected); dispatch(e.target.selected); }}/>
+              <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
