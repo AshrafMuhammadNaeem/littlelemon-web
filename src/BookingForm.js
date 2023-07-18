@@ -32,8 +32,7 @@ export  const  BookingForm = (props) => {
               <div className="form"> 
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-              <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
-               <DatePicker  id="res-date" placeholder="Select Date" selected={date} onChange={(selected) => { setDate(selected); dispatch(selected); }}/>
+               <DatePicker  id="res-date" placeholderText="Select Date" selected={date} onChange={(selected) => { setDate(selected); dispatch(selected); }}/>
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
