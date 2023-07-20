@@ -35,10 +35,9 @@ export  const  BookingForm = ({
             alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
           };
 
-          const handleDateSelection = (e) => {
-            e.preventDefault();
-            const f = new Date(e.target.value);
-            dispatch({ type: "SELECT_DATE", payload: f });
+          const handleDateSelection = (date) => {
+            
+            dispatch({ type: "SELECT_DATE", payload: date});
           };
 
           // onChange={(date) => handleChange({ target: { name: "date", value: date } })}
@@ -71,7 +70,7 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" name= "date" placeholderText="Select Date" selected={formData.date} onChange={(date, e) => { handleDateChange(date); handleDateSelection(e); }} min={new Date().toISOString().split("T")[0]} />
+               <DatePicker  id="res-date" name= "date" placeholderText="Select Date" selected={formData.date} onChange={(date) => { handleDateChange(date); handleDateSelection(date); }} min={new Date().toISOString().split("T")[0]} />
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
