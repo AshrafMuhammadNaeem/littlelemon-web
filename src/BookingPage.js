@@ -85,6 +85,18 @@ import { fetchAPI, submitAPI } from "./Api";
 export const BookingPage = () => {
 
   const today = new Date();
+
+  
+  const [formData, setFormData] = useState({
+    date: today,
+    guests: "1",
+    time: "",
+    occasion: "None",
+    requests: "",
+    fname: "",
+    lname: "",
+    email: "",
+  });
   const [data, setData] = useState();
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
