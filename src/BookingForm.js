@@ -79,7 +79,7 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="guests">Number of guests</label>
-                    <input type="number" placeholder="1" min="1" max="10" id="guests" value={guestnumber} onChange={(e) => setGuestnumber(e.target.value)}/>
+                    <input type="number" placeholder="1" min="1" max="10" id="guests" value={formData.guests} onChange={handleChange}/>
                    
               </div>
               <div>
