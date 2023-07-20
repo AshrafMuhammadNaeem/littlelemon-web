@@ -97,6 +97,22 @@ export const BookingPage = () => {
     lname: "",
     email: "",
   });
+
+  const submitForm = (formData) => {
+    if (submitAPI(formData)) {
+      console.log(formData);
+      setFormData({
+        date: today,
+        guests: "",
+        time: "",
+        occasion: "None",
+        requests: "",
+        fname: "",
+        lname: "",
+        email: "",
+      });
+    }
+  };
   const [data, setData] = useState();
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
