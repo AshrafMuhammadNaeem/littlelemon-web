@@ -61,13 +61,13 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" placeholderText="Select Date" selected={formData.date} onChange={(selected) => { setDate(selected); dispatch(selected); }}/>
+               <DatePicker  id="res-date" placeholderText="Select Date" selected={formData.date} onChange={(e) => { handleChange(e); handleDateSelection(e); }} min={new Date().toISOString().split("T")[0]} />
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
-                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select id="res-time " value={props.time} onChange={(e) => props.setTime(e.target.value)}>
+                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select id="res-time " value={props.time} onChange={(e) => {handleTimeSelection(e, time);handleChange(e);}} disabled={availableTimes.selectedTime === time}>
                                         {availableTimes.map((availableTime) => (
                                           <option value={availableTime}>{availableTime}</option>
 
