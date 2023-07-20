@@ -83,7 +83,7 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="occasion">Occasion</label>
-                    <select id="occasion" value={formData.occasion} onChange={handleChange}>
+                    <select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
                         <option value="Birthday">Birthday</option>
                         <option value="Anniversary">Anniversary</option>
                         <option value="Work Promotion">Work Promotion</option>
