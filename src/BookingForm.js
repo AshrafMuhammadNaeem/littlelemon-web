@@ -6,7 +6,13 @@ import './BookingForm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-export  const  BookingForm = (props) => {
+export  const  BookingForm = ({
+      availableTimes,
+      dispatch,
+      setFormData,
+      formData,
+      submitForm,
+    }) => {
     const { availableTimes, dispatch } = props;
 
     // const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
