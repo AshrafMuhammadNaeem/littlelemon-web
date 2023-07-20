@@ -122,6 +122,24 @@ export const BookingPage = () => {
       availableTimes: availableTimes,
     };
   };
+
+  
+  const updateTimes = (state, action) => {
+    switch (action.type) {
+      case "SELECT_TIME":
+        return {
+          ...state,
+          selectedTime: action.payload,
+        };
+      case "SELECT_DATE":
+        return {
+          ...state,
+          availableTimes: fetchAPI(action.payload),
+        };
+      default:
+        return state;
+    }
+  };
   const [data, setData] = useState();
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
