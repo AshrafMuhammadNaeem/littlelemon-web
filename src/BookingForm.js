@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
@@ -67,7 +66,7 @@ export  const  BookingForm = ({
                                         {availableTimes.availableTimes.map((time, idx) => (
                                           <option key={idx}
                                           value={time}
-                                          onClick={(e) => {
+                                          onChange={(e) => {
                                             handleTimeSelection(e, time);
                                             handleChange(e);
                                           }}
@@ -79,7 +78,7 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="guests">Number of guests</label>
-                    <input type="number" placeholder="1" min="1" max="10" id="guests" value={formData.guests} onChange={handleChange}/>
+                    <input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
                    
               </div>
               <div>
