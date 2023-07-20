@@ -40,30 +40,28 @@ export  const  BookingForm = ({
             alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
           };
 
-    // const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
-    const [date, setDate] = useState()
-    // const [time, setTime] = useState("17:00")
-    const [guestnumber, setGuestnumber] = useState("1")
-    const [occasion, setOccasion] = useState("Birthday")
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted!");
-        alert("Reservation form successfully submitted")
-        setDate();
-        // props.setTime("17:00")
-        setGuestnumber("1")
-        setOccasion("Birthday");
+          const handleDateSelection = (e) => {
+            e.preventDefault();
+            const f = new Date(e.target.value);
+            dispatch({ type: "SELECT_DATE", payload: f });
+          };
         
-    }
+          const handleChange = (e) => {
+            const { name, value } = e.target;
+            setFormData((data) => ({
+              ...data,
+              [name]: value,
+            }));
+          };
+
     return(
       <div className="booking-form">
         <h2> Booking Form </h2>
             <form onSubmit={handleSubmit}  >
-              <div className="form"> 
+              <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" placeholderText="Select Date" selected={date} onChange={(selected) => { setDate(selected); dispatch(selected); }}/>
+               <DatePicker  id="res-date" placeholderText="Select Date" selected={formData.date} onChange={(selected) => { setDate(selected); dispatch(selected); }}/>
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
