@@ -20,10 +20,6 @@ export  const  BookingForm = ({
             dispatch({ type: "SELECT_TIME", payload: time });
           };
 
-          const handleTimeSelection = (e, time) => {
-            e.preventDefault();
-            dispatch({ type: "SELECT_TIME", payload: time });
-          };
           const handleSubmit = (e) => {
             e.preventDefault();
             submitForm(formData);
@@ -67,9 +63,16 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
-                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select id="res-time " value={props.time} onChange={(e) => {handleTimeSelection(e, time);handleChange(e);}} disabled={availableTimes.selectedTime === time}>
-                                        {availableTimes.map((availableTime) => (
-                                          <option value={availableTime}>{availableTime}</option>
+                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select>
+                                        {availableTimes.availableTimes.map((time, idx) => (
+                                          <option key={idx}
+                                          value={time}
+                                          onClick={(e) => {
+                                            handleTimeSelection(e, time);
+                                            handleChange(e);
+                                          }}
+                                          disabled={availableTimes.selectedTime === time}>
+                                            {time}</option>
 
                                         ))}
                     </select>
