@@ -40,7 +40,20 @@ export  const  BookingForm = ({
             const f = new Date(e.target.value);
             dispatch({ type: "SELECT_DATE", payload: f });
           };
+
+          // onChange={(date) => handleChange({ target: { name: "date", value: date } })}
+
+          const handleDateChange = (date) => {
+            setFormData((data) => ({
+              ...data,
+              date,
+            }));
+          };
         
+          // const handleDateChangeAndSelection = (date) => {
+          //   handleDateChange(date);
+          //   handleDateSelection(e); // You can pass `date` or `e` here depending on what `handleDateSelection` expects
+          // };
           const handleChange = (e) => {
             const { name, value } = e.target;
             setFormData((data) => ({
@@ -49,6 +62,8 @@ export  const  BookingForm = ({
             }));
           };
 
+        
+
     return(
       <div className="booking-form">
         <h2> Booking Form </h2>
@@ -56,7 +71,7 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" placeholderText="Select Date" selected={formData.date} onChange={(e) => { handleChange(e); handleDateSelection(e); }} min={new Date().toISOString().split("T")[0]} />
+               <DatePicker  id="res-date" name= "date" placeholderText="Select Date" selected={formData.date} onChange={(date, e) => { handleDateChange(date); handleDateSelection(e); }} min={new Date().toISOString().split("T")[0]} />
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
