@@ -24,7 +24,21 @@ export  const  BookingForm = ({
             e.preventDefault();
             dispatch({ type: "SELECT_TIME", payload: time });
           };
-        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            submitForm(formData);
+            setFormData({
+              date: new Date(),
+              guests: "",
+              time: "",
+              occasion: "None",
+              fname: "",
+              lname: "",
+              requests: "",
+              email: ""
+            });
+            alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
+          };
 
     // const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
     const [date, setDate] = useState()
