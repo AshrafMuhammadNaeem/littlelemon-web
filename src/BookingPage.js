@@ -113,6 +113,15 @@ export const BookingPage = () => {
       });
     }
   };
+
+  const initializeTimes = () => {
+    const availableTimes = fetchAPI(today);
+
+    return {
+      selectedTime: null,
+      availableTimes: availableTimes,
+    };
+  };
   const [data, setData] = useState();
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
