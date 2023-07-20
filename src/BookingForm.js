@@ -20,6 +20,12 @@ export  const  BookingForm = ({
             dispatch({ type: "SELECT_TIME", payload: time });
           };
 
+          const handleTimeSelection = (e, time) => {
+            e.preventDefault();
+            dispatch({ type: "SELECT_TIME", payload: time });
+          };
+        
+
     // const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
     const [date, setDate] = useState()
     // const [time, setTime] = useState("17:00")
