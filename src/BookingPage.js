@@ -79,54 +79,12 @@
 
 import React, { useReducer, useEffect, useState } from 'react';
 import { BookingForm } from './BookingForm';
+import { fetchAPI, submitAPI } from "./Api";
 
-function updateTimes(state, selectedDate) {
-  return fetchAPI(selectedDate);
-}
-
-function initializeTimes() {
-  const today = new Date().toISOString().split('T')[0];
-  return fetchAPI(today);
-}
-
-const seededRandom = function (seed) {
-  var m = 2**35 - 31;
-  var a = 185852;
-  var s = seed % m;
-  return function () {
-    return (s = s * a % m) / m;
-  };
-}
-
-const fetchAPI = function (date) {
-  return new Promise((resolve, reject) => {
-    let result = [];
-    let random = seededRandom(date.getDate());
-
-    for (let i = 17; i <= 23; i++) {
-      if (random() < 0.5) {
-        result.push(i + ':00');
-      }
-      if (random() < 0.5) {
-        result.push(i + ':30');
-      }
-    }
-
-    // Simulating asynchronous behavior with a setTimeout
-    setTimeout(() => {
-      resolve(result);
-    }, 1000); // Simulate 1 second delay
-
-    // In a real-world scenario, you would make an actual API request here
-    // using fetch or axios and return the Promise that resolves to the data
-  });
-};
-
-const submitAPI = function (formData) {
-  return true;
-};
 
 export const BookingPage = () => {
+
+  const today = new Date();
   const [data, setData] = useState();
   const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
