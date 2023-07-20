@@ -140,27 +140,17 @@ export const BookingPage = () => {
         return state;
     }
   };
-  const [data, setData] = useState();
-  const [time, dispatch] = useReducer(updateTimes, null, initializeTimes);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const apiData = await fetchAPI(new Date());
-        setData(apiData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const availableTimes = ['17:00 pm', '18:00 pm', '19:00', '20:00', '21:00', '22:00'];
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (
-    <>
-      <BookingForm time={time} dispatch={dispatch} availableTimes={availableTimes} />
-    </>
+    <BookingForm
+      dispatch={dispatch}
+      initializeTimes={initializeTimes}
+      availableTimes={availableTimes}
+      submitForm={submitForm}
+      formData={formData}
+      setFormData={setFormData}
+    />
   );
+
 };
