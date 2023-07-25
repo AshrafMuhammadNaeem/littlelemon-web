@@ -77,7 +77,7 @@
 //   );
 // };
 
-import React, { useReducer, useEffect, useState } from 'react';
+import React, { useReducer, useState } from 'react';
 import { BookingForm } from './BookingForm';
 import { fetchAPI, submitAPI } from "./Api";
 
