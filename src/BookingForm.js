@@ -36,7 +36,7 @@ export  const  BookingForm = ({
           };
 
           const handleDateSelection = (date) => {
-            
+
             dispatch({ type: "SELECT_DATE", payload: date});
           };
 
