@@ -26,6 +26,7 @@
     width: 300px;
     text-align: center;
     cursor: pointer;
+    background-color: #EDEFEE;
     
   }
 
@@ -35,19 +36,19 @@
   }
   .icon{
   position: absolute;
-  top: 65%;
-  right: 400px;
+  top: 60%;
+  right: 390px;
   transform: translateY(-30%);
-  color: black;
+  color: #495E57;
   align-items: center;
   }
 
   .icon-2{
     position: absolute;
     top: 65%;
-    right: 130px;
+    right: 135px;
     transform: translateY(-30%);
-    color: grey;
+    color: #495E57;
     align-items: center;
     
 
