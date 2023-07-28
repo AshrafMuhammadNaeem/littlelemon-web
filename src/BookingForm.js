@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
@@ -12,6 +12,8 @@ export  const  BookingForm = ({
       formData,
       submitForm,
     }) => {
+
+      const [isDateSelected, setIsDateSelected] = useState(false);
     
 
       const handleTimeSelection = (e, time) => {
@@ -32,11 +34,13 @@ export  const  BookingForm = ({
               requests: "",
               email: ""
             });
+            setIsDateSelected(false);
+
             alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
           };
 
           const handleDateSelection = (date) => {
-            
+            setIsDateSelected(true);
             dispatch({ type: "SELECT_DATE", payload: date});
           };
 
@@ -72,7 +76,7 @@ export  const  BookingForm = ({
               <label htmlFor="res-date"> Date</label>
                <DatePicker  id="res-date" name= "date"
                 placeholderText="Select Date"
-                selected={formData.date ? null : "Select Date"} 
+                selected={isDateSelected ? formData.date : null} 
                 onChange={(date) => { handleDateChange(date); handleDateSelection(date); }} 
                 min={new Date().toISOString().split("T")[0]} 
                 />
