@@ -70,7 +70,12 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" name= "date" placeholderText="Select Date" selected={formData.date} onChange={(date) => { handleDateChange(date); handleDateSelection(date); }} min={new Date().toISOString().split("T")[0]} />
+               <DatePicker  id="res-date" name= "date"
+                placeholderText="Select Date"
+                selected={formData.date ? null : "Select Date"} 
+                onChange={(date) => { handleDateChange(date); handleDateSelection(date); }} 
+                min={new Date().toISOString().split("T")[0]} 
+                />
               <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
