@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
+import restaurant from './images/restaurant.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -68,8 +69,9 @@ export  const  BookingForm = ({
         
 
     return(
-      <div className="booking-form">
-        <h2> Booking Form </h2>
+      <div className="">
+        <div className="booking-form">
+          <h2> Booking Form </h2>
             <form onSubmit={handleSubmit}  >
               <div className="form">
               <div className="icon-wraper">
@@ -125,9 +127,21 @@ export  const  BookingForm = ({
                      
 
               </div>
-              
-                    <input type="submit" value="Make Your reservation"/>
+             
             </form>
+          
+          </div>
+        
+
+            <div>
+                   <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+                   <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+                   <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+              </div>
+              <div>
+                   <input type="submit" value="Make Your reservation"/>
+              </div>
       </div>
+      
     )
 }
