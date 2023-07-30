@@ -4,7 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
 import restaurant from './images/restaurant.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export  const  BookingForm = ({
       availableTimes,
@@ -15,7 +15,15 @@ export  const  BookingForm = ({
     }) => {
 
       const [isDateSelected, setIsDateSelected] = useState(false);
+      const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
+
+      const handleDatePickerOpen = () => {
+        setIsDatePickerOpen(true);
+      };
     
+      const handleDatePickerClose = () => {
+        setIsDatePickerOpen(false);
+      };
 
       const handleTimeSelection = (e, time) => {
             e.preventDefault();
@@ -79,10 +87,17 @@ export  const  BookingForm = ({
                <DatePicker  id="res-date" name= "date"
                 placeholderText="Select Date"
                 selected={isDateSelected ? formData.date : null} 
-                onChange={(date) => { handleDateChange(date); handleDateSelection(date); }} 
-                min={new Date().toISOString().split("T")[0]} 
+                onChange={(date) => { handleDateChange(date); handleDateSelection(date); }}
+                onFocus={handleDatePickerOpen}
+                onBlur={handleDatePickerClose}
+                min={new Date().toISOString().split("T")[0]}
+                style={{
+                  backgroundColor: isDatePickerOpen ? "#495E57" : "red",
+                  color: isDatePickerOpen ? "white" : "#aaa",
+                  fontStyle: isDatePickerOpen ? "normal" : "italic"
+                }}
                 />
-              <FontAwesomeIcon icon={faChevronDown} className="icon-2" />
+              <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
               </div>
               <div>
