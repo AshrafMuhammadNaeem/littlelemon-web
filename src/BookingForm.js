@@ -127,11 +127,10 @@ export  const  BookingForm = ({
                      
 
               </div>
-             
+
             </form>
-          
+
           </div>
-        
 
             <div>
                    <img src={restaurant}  width={200}  alt="restaurant inside"></img>
@@ -142,6 +141,5 @@ export  const  BookingForm = ({
                    <input type="submit" value="Make Your reservation"/>
               </div>
       </div>
-      
     )
 }
