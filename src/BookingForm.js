@@ -91,11 +91,6 @@ export  const  BookingForm = ({
                 onFocus={handleDatePickerOpen}
                 onBlur={handleDatePickerClose}
                 min={new Date().toISOString().split("T")[0]}
-                style={{
-                  backgroundColor: isDatePickerOpen ? "#495E57" : "red",
-                  color: isDatePickerOpen ? "white" : "#aaa",
-                  fontStyle: isDatePickerOpen ? "normal" : "italic"
-                }}
                 />
               <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className="icon-2" />
               <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
