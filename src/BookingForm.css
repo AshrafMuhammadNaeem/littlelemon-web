@@ -21,7 +21,7 @@
     margin-bottom: 3px;
   }
 
-  #res-date{
+  .res-date-active{
     padding: 16px;
     width: 280px;
     text-align: center;
@@ -30,8 +30,30 @@
     border-radius: 6px;
     border: none;
   }
-  #res-date::placeholder {
+  .res-date-active::placeholder {
      color: #495E57;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 1;  
+    text-align: center;
+    /* removes the default translucent color */
+
+  }
+
+  .res-date-inactive{
+    padding: 16px;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #495E57;
+    border-radius: 6px;
+    border: none;
+    color: #EDEFEE;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .res-date-inactive::placeholder {
+    color: #EDEFEE;
     font-size: 15px;
     font-weight: bold;
     opacity: 1;  
@@ -44,7 +66,7 @@
   .icon-wraper{
     position: relative;
   }
-  .icon{
+  .icon-active{
   position: absolute;
   top: 60%;
   right: 380px;
@@ -53,14 +75,33 @@
   align-items: center;
   }
 
-  .icon-2{
+  .icon-inactive{
+  position: absolute;
+  top: 60%;
+  right: 380px;
+  transform: translateY(-30%);
+  color: #EDEFEE;
+  align-items: center;
+
+  }
+
+  .icon-2-active{
     position: absolute;
     top: 65%;
     right: 145px;
     transform: translateY(-30%);
     color: #495E57;
     align-items: center;
-    
+
+  }
+
+  .icon-2-inactive{
+    position: absolute;
+    top: 65%;
+    right: 145px;
+    transform: translateY(-30%);
+    color: #EDEFEE;
+    align-items: center;
 
   }
   

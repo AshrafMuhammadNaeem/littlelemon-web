@@ -84,7 +84,7 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  id="res-date" name= "date"
+               <DatePicker  className={isDatePickerOpen ? "res-date-inactive " : "res-date-active"} name= "date"
                 placeholderText="Select Date"
                 selected={isDateSelected ? formData.date : null} 
                 onChange={(date) => { handleDateChange(date); handleDateSelection(date); }}
@@ -92,8 +92,8 @@ export  const  BookingForm = ({
                 onBlur={handleDatePickerClose}
                 min={new Date().toISOString().split("T")[0]}
                 />
-              <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className="icon-2" />
-              <FontAwesomeIcon icon={faCalendar} fontSize={30} className="icon" />
+              <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className={isDatePickerOpen ? "icon-2-inactive " : "icon-2-active"} />
+              <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isDatePickerOpen ? "icon-inactive " : "icon-active"} />
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
