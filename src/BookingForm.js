@@ -4,7 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
 import restaurant from './images/restaurant.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faClock, faChampagneGlasses, faPerson, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faClock, faChampagneGlasses, faChevronDown, faChevronUp, faUser } from '@fortawesome/free-solid-svg-icons';
 
 export  const  BookingForm = ({
       availableTimes,
@@ -113,7 +113,7 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="guests">Number of guests</label>
-              <FontAwesomeIcon icon={faPerson} fontSize={20} /><input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
+              <FontAwesomeIcon icon={faUser} fontSize={20} /><input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
                    
               </div>
               <div>
