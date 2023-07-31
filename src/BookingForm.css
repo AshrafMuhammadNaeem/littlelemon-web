@@ -29,6 +29,8 @@
     background-color: #EDEFEE;
     border-radius: 6px;
     border: none;
+    box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
+  
   }
   *:focus{
     outline: none;
@@ -55,7 +57,7 @@
     font-size: 14px;
     font-weight: bold;
     border-bottom: #EDEFEE;
-    opacity: 10;
+   box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
   }
   .res-date-inactive::placeholder {
     color: #EDEFEE;
