@@ -113,12 +113,13 @@ export  const  BookingForm = ({
               </div>
               <div>
               <label htmlFor="guests">Number of guests</label>
-                    <input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
+              <FontAwesomeIcon icon={faPerson} fontSize={20} /><input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
                    
               </div>
               <div>
               <label htmlFor="occasion">Occasion</label>
-                    <select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
+              
+              <FontAwesomeIcon icon={faChampagneGlasses} fontSize={20} /><select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
                         <option value="Birthday">Birthday</option>
                         <option value="Anniversary">Anniversary</option>
                         <option value="Work Promotion">Work Promotion</option>
