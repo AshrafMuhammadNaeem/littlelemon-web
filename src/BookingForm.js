@@ -15,14 +15,14 @@ export  const  BookingForm = ({
     }) => {
 
       const [isDateSelected, setIsDateSelected] = useState(false);
-      const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
+      const [isInputOpen, setIsInputOpen] = useState(false);
 
-      const handleDatePickerOpen = () => {
-        setIsDatePickerOpen(true);
+      const handleInputOpen = () => {
+        setIsInputOpen(true);
       };
     
-      const handleDatePickerClose = () => {
-        setIsDatePickerOpen(false);
+      const handleInputClose = () => {
+        setIsInputOpen(false);
       };
 
       const handleTimeSelection = (e, time) => {
@@ -84,16 +84,16 @@ export  const  BookingForm = ({
               <div className="form">
               <div className="icon-wraper">
               <label htmlFor="res-date"> Date</label>
-               <DatePicker  className={isDatePickerOpen ? "res-date-inactive " : "res-date-active"} name= "date"
+               <DatePicker  className={isInputOpen ? "res-date-inactive " : "res-date-active"} name= "date"
                 placeholderText="Select Date"
                 selected={isDateSelected ? formData.date : null} 
                 onChange={(date) => { handleDateChange(date); handleDateSelection(date); }}
-                onFocus={handleDatePickerOpen}
-                onBlur={handleDatePickerClose}
+                onFocus={handleInputOpen}
+                onBlur={handleInputClose}
                 min={new Date().toISOString().split("T")[0]}
                 />
-              <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className={isDatePickerOpen ? "icon-2-inactive " : "icon-2-active"} />
-              <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isDatePickerOpen ? "icon-inactive " : "icon-active"} />
+              <FontAwesomeIcon icon={ isInputOpen ? faChevronUp : faChevronDown} className={isInputOpen ? "icon-2-inactive " : "icon-2-active"} />
+              <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isInputOpen ? "icon-inactive " : "icon-active"} />
               </div>
               <div>
               <label htmlFor="res-time">Choose time</label>
