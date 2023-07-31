@@ -76,7 +76,7 @@
   .icon-active{
   position: absolute;
   top: 60%;
-  right: 380px;
+  right: 370px;
   transform: translateY(-30%);
   color: #495E57;
   align-items: center;
@@ -85,7 +85,7 @@
   .icon-inactive{
   position: absolute;
   top: 60%;
-  right: 380px;
+  right: 370px;
   transform: translateY(-30%);
   color: #EDEFEE;
   align-items: center;
@@ -95,7 +95,7 @@
   .icon-2-active{
     position: absolute;
     top: 65%;
-    right: 145px;
+    right: 143px;
     transform: translateY(-30%);
     color: #495E57;
     align-items: center;
@@ -105,7 +105,7 @@
   .icon-2-inactive{
     position: absolute;
     top: 65%;
-    right: 145px;
+    right: 143px;
     transform: translateY(-30%);
     color: #EDEFEE;
     align-items: center;
