@@ -83,21 +83,21 @@ export  const  BookingForm = ({
             <form onSubmit={handleSubmit}  >
               <div className="form">
               <div className="icon-wraper">
-              <label htmlFor="res-date"> Date</label>
-               <DatePicker  className={isInputOpen ? "res-date-inactive " : "res-date-active"} name= "date"
-                placeholderText="Select Date"
-                selected={isDateSelected ? formData.date : null} 
-                onChange={(date) => { handleDateChange(date); handleDateSelection(date); }}
-                onFocus={handleInputOpen}
-                onBlur={handleInputClose}
-                min={new Date().toISOString().split("T")[0]}
-                />
-              <FontAwesomeIcon icon={ isInputOpen ? faChevronUp : faChevronDown} className={isInputOpen ? "icon-2-inactive " : "icon-2-active"} />
-              <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isInputOpen ? "icon-inactive " : "icon-active"} />
+                <label htmlFor="res-date"> Date</label>
+                <DatePicker  className={isInputOpen ? "res-date-inactive " : "res-date-active"} name= "date"
+                  placeholderText="Select Date"
+                  selected={isDateSelected ? formData.date : null} 
+                  onChange={(date) => { handleDateChange(date); handleDateSelection(date); }}
+                  onFocus={handleInputOpen}
+                  onBlur={handleInputClose}
+                  min={new Date().toISOString().split("T")[0]}
+                  />
+                <FontAwesomeIcon icon={ isInputOpen ? faChevronUp : faChevronDown} className={isInputOpen ? "icon-2-inactive " : "icon-2-active"} />
+                <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isInputOpen ? "icon-inactive " : "icon-active"} />
               </div>
-              <div>
+              <div className="icon-wraper">
               <label htmlFor="res-time">Choose time</label>
-                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select>
+                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select >
                                         {availableTimes.availableTimes.map((time, idx) => (
                                           <option key={idx}
                                           value={time}
@@ -111,9 +111,13 @@ export  const  BookingForm = ({
                                         ))}
                     </select>
               </div>
-              <div>
-              <label htmlFor="guests">Number of guests</label>
-              <FontAwesomeIcon icon={faUser} fontSize={20} /><input type="number" placeholder="1" min="1" max="10" id="guests" name="guests" value={formData.guests} onChange={handleChange}/>
+              <div className="icon-wraper">
+                <label htmlFor="guests">Number of guests</label>
+                <FontAwesomeIcon icon={faUser} fontSize={20} className={isInputOpen ? "icon-inactive " : "icon-active"} />
+                <input type="number" placeholder="1" min="1" max="10" id="guests" className={isInputOpen ? "res-date-inactive " : "res-date-active"}
+                name="guests" value={formData.guests} 
+                onChange={handleChange}
+                onFocus={handleInputOpen} onBlur={handleInputClose}/>
                    
               </div>
               <div>
