@@ -30,6 +30,9 @@
     border-radius: 6px;
     border: none;
   }
+  *:focus{
+    outline: none;
+  }
   .res-date-active::placeholder {
      color: #495E57;
     font-size: 15px;
@@ -51,6 +54,8 @@
     color: #EDEFEE;
     font-size: 14px;
     font-weight: bold;
+    border-bottom: #EDEFEE;
+    opacity: 10;
   }
   .res-date-inactive::placeholder {
     color: #EDEFEE;
