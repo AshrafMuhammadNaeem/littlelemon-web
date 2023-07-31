@@ -96,20 +96,20 @@ export  const  BookingForm = ({
                 <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isInputOpen ? "icon-inactive " : "icon-active"} />
               </div>
               <div className="icon-wraper">
-              <label htmlFor="res-time">Choose time</label>
-                    <FontAwesomeIcon icon={faClock} fontSize={20} /><select >
-                                        {availableTimes.availableTimes.map((time, idx) => (
-                                          <option key={idx}
-                                          value={time}
-                                          onChange={(e) => {
-                                            handleTimeSelection(e, time);
-                                            handleChange(e);
-                                          }}
-                                          disabled={availableTimes.selectedTime === time}>
-                                            {time}</option>
+                <label htmlFor="res-time">Choose time</label>
+                      <FontAwesomeIcon icon={faClock} fontSize={20} /><select >
+                                          {availableTimes.availableTimes.map((time, idx) => (
+                                            <option key={idx}
+                                            value={time}
+                                            onChange={(e) => {
+                                              handleTimeSelection(e, time);
+                                              handleChange(e);
+                                            }}
+                                            disabled={availableTimes.selectedTime === time}>
+                                              {time}</option>
 
-                                        ))}
-                    </select>
+                                          ))}
+                      </select>
               </div>
               <div className="icon-wraper">
                 <label htmlFor="guests">Number of guests</label>
