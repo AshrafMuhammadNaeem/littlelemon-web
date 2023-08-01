@@ -97,7 +97,7 @@ export  const  BookingForm = ({
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="res-time">Choose time</label>
-                            <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" /><select className="time-input">
+                            <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" /><select className="time-input"> Select time
                                                 {availableTimes.availableTimes.map((time, idx) => (
                                                   <option key={idx}
                                                   value={time}
