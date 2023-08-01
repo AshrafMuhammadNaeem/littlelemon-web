@@ -16,9 +16,9 @@
 }
 .form{
     margin-top: 20px;
-    margin: 100px 100px;
+    /* margin: 100px 100px; */
     max-width: 700px;
-    align-items: ;
+    /* align-items: ; */
     display: grid;
     grid-template-columns: auto auto;
     gap: 30px;
@@ -83,19 +83,19 @@
   .icon-wraper{
     position: relative;
   }
-  .icon-active{
+  /* .icon-active{
   position: absolute;
   top: 60%;
-  right: 285px;
+  right: 245px;
   transform: translateY(-30%);
   color: #495E57;
   align-items: center;
-  }
+  } */
 
   .icon-inactive{
   position: absolute;
   top: 60%;
-  right: 285px;
+  right: 245px;
   transform: translateY(-30%);
   color: #EDEFEE;
   align-items: center;
@@ -105,7 +105,7 @@
   .icon-2-active{
     position: absolute;
     top: 65%;
-    right: 60px;
+    right: 20px;
     transform: translateY(-30%);
     color: #495E57;
     align-items: center;
@@ -144,14 +144,14 @@
     box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
 }
 
-.time-icon{
+/* .time-icon{
   position: absolute;
   top: 60%;
-  right: 285px;
+  right: 245px;
   transform: translateY(-30%);
   color: #495E57;
   align-items: center;
-}
+} */
 
 /* Styling for the number of guests input */
 .guests-input{
@@ -164,11 +164,35 @@
   border: none;
   box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
   color: #495E57;
- } /* Added to change the font color */
- .guests-icon{
+ } 
+ /* .guests-icon{
   position: absolute;
   top: 60%;
-  right: 285px;
+  right: 245px;
+  transform: translateY(-30%);
+  color: #495E57;
+  align-items: center;
+ } */
+
+ .occasion-input{
+  padding: 16px;
+  width: 280px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #EDEFEE;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
+  color: #495E57;
+ }
+
+  .icon-active,
+  .time-icon,
+  .guests-icon,
+  .occasion-icon{
+  position: absolute;
+  top: 60%;
+  right: 245px;
   transform: translateY(-30%);
   color: #495E57;
   align-items: center;
