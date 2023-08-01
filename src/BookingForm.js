@@ -16,6 +16,7 @@ export  const  BookingForm = ({
 
       const [isDateSelected, setIsDateSelected] = useState(false);
       const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
+      const [isTimeOpen, setIsTimeOpen] = useState(false);
 
       const handleDatePickerOpen = () => {
         setIsDatePickerOpen(true);
@@ -23,6 +24,15 @@ export  const  BookingForm = ({
     
       const handleDatePickerClose = () => {
         setIsDatePickerOpen(false);
+      };
+
+      // style controlling for Time Selection 
+      const handleTimeOpen = () => {
+        setIsTimeOpen(true);
+      };
+    
+      const handleTimeClose = () => {
+        setIsTimeOpen(false);
       };
 
       const handleTimeSelection = (e, time) => {
@@ -36,7 +46,7 @@ export  const  BookingForm = ({
             setFormData({
               date: new Date(),
               guests: "",
-              time: "",
+              time: "Select Time",
               occasion: "None",
               fname: "",
               lname: "",
@@ -44,7 +54,6 @@ export  const  BookingForm = ({
               email: ""
             });
             setIsDateSelected(false);
-
             alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
           };
 
@@ -97,7 +106,8 @@ export  const  BookingForm = ({
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="res-time">Choose time</label>
-                            <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" /><select className="time-input"> Select time
+                            <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" />
+                            <select className="time-input" > <option defaultValue=""> Select Time  </option>
                                                 {availableTimes.availableTimes.map((time, idx) => (
                                                   <option key={idx}
                                                   value={time}
@@ -105,11 +115,13 @@ export  const  BookingForm = ({
                                                     handleTimeSelection(e, time);
                                                     handleChange(e);
                                                   }}
+
                                                   disabled={availableTimes.selectedTime === time}>
                                                     {time}</option>
 
                                                 ))}
                             </select>
+                            <FontAwesomeIcon icon={ isTimeOpen ? faChevronUp : faChevronDown} className={ isTimeOpen ? "icon-2-inactive" : "icon-2-active"}/>
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="guests">Number of guests</label>
@@ -140,7 +152,9 @@ export  const  BookingForm = ({
                             <label htmlFor="indoor">Outdoor seating</label>
                             <input type="radio" id="outdoor" name="outdoor seating" value= "Outdoor Seating"/>
                             </div>
-                          
+                            <div>
+                               <input type="submit" value="Make Your reservation"/>
+                             </div>
 
                     </div>
 
@@ -153,9 +167,7 @@ export  const  BookingForm = ({
                         <img src={restaurant}  width={200}  alt="restaurant inside"></img>
                         <img src={restaurant}  width={200}  alt="restaurant inside"></img>
                     </div>
-                    <div>
-                        <input type="submit" value="Make Your reservation"/>
-                    </div>
+                    
       </div>
     )
 }
