@@ -125,6 +125,7 @@
     padding: 16px;
     width: 280px;
     text-align: center;
+    appearance: none;
     cursor: pointer;
     background-color: #EDEFEE;
     border-radius: 6px;
