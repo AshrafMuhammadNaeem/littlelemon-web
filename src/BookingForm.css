@@ -1,14 +1,24 @@
+.form-container{
+
+}
 .booking-form{
     background-color: #495E57;
     color: white;
-    
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form h2 {
+  color: #F4CE14;
+  margin-left: 368px;
+  align-self: flex-start;
 }
 .form{
     margin-top: 20px;
     margin: 100px 100px;
     max-width: 700px;
-    align-items: center;
+    align-items: ;
     display: grid;
     grid-template-columns: auto auto;
     gap: 30px;
@@ -30,7 +40,7 @@
     border-radius: 6px;
     border: none;
     box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
-  
+
   }
   *:focus{
     outline: none;
@@ -39,7 +49,7 @@
      color: #495E57;
     font-size: 15px;
     font-weight: bold;
-    opacity: 1;  
+    opacity: 1;
     text-align: center;
     /* removes the default translucent color */
 
@@ -76,7 +86,7 @@
   .icon-active{
   position: absolute;
   top: 60%;
-  right: 370px;
+  right: 285px;
   transform: translateY(-30%);
   color: #495E57;
   align-items: center;
@@ -85,7 +95,7 @@
   .icon-inactive{
   position: absolute;
   top: 60%;
-  right: 370px;
+  right: 285px;
   transform: translateY(-30%);
   color: #EDEFEE;
   align-items: center;
@@ -95,7 +105,7 @@
   .icon-2-active{
     position: absolute;
     top: 65%;
-    right: 143px;
+    right: 60px;
     transform: translateY(-30%);
     color: #495E57;
     align-items: center;
@@ -105,7 +115,7 @@
   .icon-2-inactive{
     position: absolute;
     top: 65%;
-    right: 143px;
+    right: 60px;
     transform: translateY(-30%);
     color: #EDEFEE;
     align-items: center;
@@ -121,3 +131,45 @@
 .indoor{
     margin:5px 10px;
 }
+
+/* Styling for time input/options */
+.time-input{
+    padding: 16px;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #EDEFEE;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
+}
+
+.time-icon{
+  position: absolute;
+  top: 60%;
+  right: 285px;
+  transform: translateY(-30%);
+  color: #495E57;
+  align-items: center;
+}
+
+/* Styling for the number of guests input */
+.guests-input{
+  padding: 16px;
+  width: 280px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #EDEFEE;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
+  color: #495E57;
+ } /* Added to change the font color */
+ .guests-icon{
+  position: absolute;
+  top: 60%;
+  right: 285px;
+  transform: translateY(-30%);
+  color: #495E57;
+  align-items: center;
+ }
