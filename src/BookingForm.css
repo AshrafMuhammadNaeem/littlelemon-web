@@ -83,15 +83,7 @@
   .icon-wraper{
     position: relative;
   }
-  /* .icon-active{
-  position: absolute;
-  top: 60%;
-  right: 245px;
-  transform: translateY(-30%);
-  color: #495E57;
-  align-items: center;
-  } */
-
+  
   .icon-inactive{
   position: absolute;
   top: 60%;
@@ -121,18 +113,14 @@
     align-items: center;
 
   }
-  
-/* .seating{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-} */
+
 
 .indoor{
     margin:5px 10px;
 }
 
-/* Styling for time input/options */
+/* Styling for  input/options */
+
 .time-input{
     padding: 16px;
     width: 280px;
@@ -144,14 +132,7 @@
     box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
 }
 
-/* .time-icon{
-  position: absolute;
-  top: 60%;
-  right: 245px;
-  transform: translateY(-30%);
-  color: #495E57;
-  align-items: center;
-} */
+
 
 /* Styling for the number of guests input */
 .guests-input{
@@ -165,14 +146,7 @@
   box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
   color: #495E57;
  } 
- /* .guests-icon{
-  position: absolute;
-  top: 60%;
-  right: 245px;
-  transform: translateY(-30%);
-  color: #495E57;
-  align-items: center;
- } */
+ 
 
  .occasion-input{
   padding: 16px;
