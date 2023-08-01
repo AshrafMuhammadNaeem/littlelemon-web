@@ -79,7 +79,7 @@ export  const  BookingForm = ({
     return(
       <div className="form-container">
           <div className="booking-form">
-                <h2> Booking Form </h2>
+                <h2> Reservations </h2>
               <form onSubmit={handleSubmit}  >
                     <div className="form">
                     <div className="icon-wraper">
@@ -93,11 +93,11 @@ export  const  BookingForm = ({
                         min={new Date().toISOString().split("T")[0]}
                         />
                       <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className={isDatePickerOpen ? "icon-2-inactive " : "icon-2-active"} />
-                      <FontAwesomeIcon icon={faCalendar} fontSize={30} className={isDatePickerOpen ? "icon-inactive " : "icon-active"} />
+                      <FontAwesomeIcon icon={faCalendar} fontSize={25} className={isDatePickerOpen ? "icon-inactive " : "icon-active"} />
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="res-time">Choose time</label>
-                            <FontAwesomeIcon icon={faClock} fontSize={20} className="time-icon" /><select className="time-input">
+                            <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" /><select className="time-input">
                                                 {availableTimes.availableTimes.map((time, idx) => (
                                                   <option key={idx}
                                                   value={time}
@@ -113,17 +113,18 @@ export  const  BookingForm = ({
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="guests">Number of guests</label>
-                      <FontAwesomeIcon icon={faUser} fontSize={20} className="guests-icon" />
+                      <FontAwesomeIcon icon={faUser} fontSize={25} className="guests-icon" />
                       <input type="number" placeholder="1" min="1" max="10" id="guests" className="guests-input"
                       name="guests" value={formData.guests} 
                       onChange={handleChange}
                       />
                         
                     </div>
-                    <div>
+                    <div className="icon-wraper">
                     <label htmlFor="occasion">Occasion</label>
                     
-                    <FontAwesomeIcon icon={faChampagneGlasses} fontSize={20} /><select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
+                    <FontAwesomeIcon icon={faChampagneGlasses} fontSize={25} className="occasion-icon" />
+                    <select id="occasion" name="occasion" className="occasion-input" value={formData.occasion} onChange={handleChange}>
                               <option value="Birthday">Birthday</option>
                               <option value="Anniversary">Anniversary</option>
                               <option value="Work Promotion">Work Promotion</option>
