@@ -118,7 +118,7 @@ export  const  BookingForm = ({
       <div className="form-container">
           <div className="booking-form">
                 <h2> Reservations </h2>
-              <form onSubmit={handleSubmit}  >
+                <form onSubmit={handleSubmit}  >
                     <div className="form">
                     <div className="icon-wraper">
                       <label htmlFor="res-date"> Date</label>
@@ -204,22 +204,34 @@ export  const  BookingForm = ({
                             <label htmlFor="indoor">Outdoor seating</label>
                             <input type="radio" id="outdoor" name="outdoor seating" value= "Outdoor Seating"/>
                             </div>
-                            <div>
-                               <input type="submit" value="Make Your reservation"/>
-                             </div>
 
-                    </div>
+                         </div>
 
-              </form>
+                  </form>
 
-            </div>
+          </div>
 
-                  <div>
+                  <div className="images">
+                        <div>
                         <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+
+                        </div>
+                        <div>
                         <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+
+                        </div>
+                        <div>
                         <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+
+                        </div>
                     </div>
                     
+                    <form onSubmit={handleSubmit}>
+                          <div>
+                            <input type="submit" value="Make Your reservation" />
+                          </div>
+                        </form>
+                              
       </div>
     )
 }
