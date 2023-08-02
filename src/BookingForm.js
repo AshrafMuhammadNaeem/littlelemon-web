@@ -107,7 +107,24 @@ export  const  BookingForm = ({
                     <div className="icon-wraper">
                       <label htmlFor="res-time">Choose time</label>
                             <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" />
-                            <select className="time-input" > <option defaultValue=""> Select Time  </option>
+                            <input
+                              type="text"
+                              className="time-input"
+                              list="time-options"
+                              // placeholder="Select Time"
+                              onFocus={handleTimeOpen}
+                              onBlur={handleTimeClose}
+    
+                              
+                            />
+                            <datalist id="time-options">
+                              {availableTimes.availableTimes.map((time, idx) => (
+                                <option key={idx} value={time} 
+                                onChange={(e) => { handleTimeSelection(e, time); handleChange(e)}}
+                                disabled={availableTimes.selectedTime === time}>{time}</option>
+                              ))}
+                            </datalist>
+                            {/* <select className="time-input" > <option defaultValue=""> Select Time  </option>
                                                 {availableTimes.availableTimes.map((time, idx) => (
                                                   <option key={idx}
                                                   value={time}
@@ -120,7 +137,7 @@ export  const  BookingForm = ({
                                                     {time}</option>
 
                                                 ))}
-                            </select>
+                            </select> */}
                             <FontAwesomeIcon icon={ isTimeOpen ? faChevronUp : faChevronDown} className={ isTimeOpen ? "icon-2-inactive" : "icon-2-active"}/>
                     </div>
                     <div className="icon-wraper">
