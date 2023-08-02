@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
@@ -14,6 +14,7 @@ export  const  BookingForm = ({
       submitForm,
     }) => {
 
+      const inputRef = useRef(null);
       const [isDateSelected, setIsDateSelected] = useState(false);
       const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
       const [isTimeOpen, setIsTimeOpen] = useState(false);
@@ -29,9 +30,11 @@ export  const  BookingForm = ({
       // style controlling for Time Selection 
       const handleTimeOpen = () => {
         setIsTimeOpen(true);
+        inputRef.current.focus()
       };
     
       const handleTimeClose = () => {
+        inputRef.current.blur()
         setIsTimeOpen(false);
       };
 
@@ -109,7 +112,8 @@ export  const  BookingForm = ({
                             <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" />
                             <input
                               type="text"
-                              className="time-input"
+                              ref={inputRef}
+                              className={isTimeOpen ? "res-date-inactive " : "res-date-active"}
                               list="time-options"
                               // placeholder="Select Time"
                               onFocus={handleTimeOpen}
