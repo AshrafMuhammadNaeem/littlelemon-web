@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useState} from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
@@ -14,10 +14,12 @@ export  const  BookingForm = ({
       submitForm,
     }) => {
 
-      const inputRef = useRef(null);
+      // const inputRef = useRef(null);
       const [isDateSelected, setIsDateSelected] = useState(false);
       const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
       const [isTimeOpen, setIsTimeOpen] = useState(false);
+      const [isGuestsOpen, setIsGuestsOpen] = useState(false);
+      // const [isOccasionOpen, setIsOccasionOpen] = useState(false);
 
       const handleDatePickerOpen = () => {
         setIsDatePickerOpen(true);
@@ -28,20 +30,43 @@ export  const  BookingForm = ({
       };
 
       // style controlling for Time Selection 
-      const handleTimeOpen = () => {
+      const handleTimeOpen = (e) => {
+        e.preventDefault()
         setIsTimeOpen(true);
-        inputRef.current.focus()
+        // inputRef.current.focus()
       };
     
-      const handleTimeClose = () => {
-        inputRef.current.blur()
-        setIsTimeOpen(false);
-      };
+      // const handleTimeClose = () => {
+      //   setIsTimeOpen(false);
+      // };
 
       const handleTimeSelection = (e, time) => {
             e.preventDefault();
             dispatch({ type: "SELECT_TIME", payload: time });
           };
+
+    // handle guests selection function
+      const handleGuestsOpen = (e) => {
+        e.preventDefault()
+        setIsGuestsOpen(true);
+        // inputRef.current.focus()
+      };
+    
+      // const handleGuestsClose = () => {
+      //   setIsGuestsOpen(false);
+      // };
+
+      // handle Occsasion selection function
+
+      // const handleOccasionOpen = (e) => {
+      //   e.preventDefault()
+      //   setIsOccasionOpen(true);
+      //   // inputRef.current.focus()
+      // };
+    
+      // const handleOccasionClose = () => {
+      //   setIsOccasionOpen(false);
+      // };
 
           const handleSubmit = (e) => {
             e.preventDefault();
@@ -57,6 +82,7 @@ export  const  BookingForm = ({
               email: ""
             });
             setIsDateSelected(false);
+            setIsTimeOpen(false)
             alert(`Reservation successfull for: ${formData.fname} ${formData.lname}. A confirmation email will be sent to your address with the details of your reservation.`);
           };
 
@@ -105,21 +131,20 @@ export  const  BookingForm = ({
                         min={new Date().toISOString().split("T")[0]}
                         />
                       <FontAwesomeIcon icon={ isDatePickerOpen ? faChevronUp : faChevronDown} className={isDatePickerOpen ? "icon-2-inactive " : "icon-2-active"} />
-                      <FontAwesomeIcon icon={faCalendar} fontSize={25} className={isDatePickerOpen ? "icon-inactive " : "icon-active"} />
+                      <FontAwesomeIcon icon={faCalendar} fontSize={25} className= "icon-active" />
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="res-time">Choose time</label>
                             <FontAwesomeIcon icon={faClock} fontSize={25} className="time-icon" />
                             <input
                               type="text"
-                              ref={inputRef}
-                              className={isTimeOpen ? "res-date-inactive " : "res-date-active"}
+                              id="res-time"
+                              // ref={inputRef}
+                              className={isTimeOpen ? "res-date-inactive " : "time-input"}
                               list="time-options"
-                              // placeholder="Select Time"
+                              placeholder="Select time"
                               onFocus={handleTimeOpen}
-                              onBlur={handleTimeClose}
-    
-                              
+                              // onBlur={handleTimeClose}
                             />
                             <datalist id="time-options">
                               {availableTimes.availableTimes.map((time, idx) => (
@@ -128,6 +153,7 @@ export  const  BookingForm = ({
                                 disabled={availableTimes.selectedTime === time}>{time}</option>
                               ))}
                             </datalist>
+                            <FontAwesomeIcon icon={ isTimeOpen ? faChevronUp : faChevronDown} className={ isTimeOpen ? "icon-2-inactive" : "icon-2-active"}/>
                             {/* <select className="time-input" > <option defaultValue=""> Select Time  </option>
                                                 {availableTimes.availableTimes.map((time, idx) => (
                                                   <option key={idx}
@@ -142,22 +168,27 @@ export  const  BookingForm = ({
 
                                                 ))}
                             </select> */}
-                            <FontAwesomeIcon icon={ isTimeOpen ? faChevronUp : faChevronDown} className={ isTimeOpen ? "icon-2-inactive" : "icon-2-active"}/>
+              
                     </div>
                     <div className="icon-wraper">
                       <label htmlFor="guests">Number of guests</label>
                       <FontAwesomeIcon icon={faUser} fontSize={25} className="guests-icon" />
-                      <input type="number" placeholder="1" min="1" max="10" id="guests" className="guests-input"
+                      <input type="number" min="1" max="10" id="guests" className={isGuestsOpen ? "res-date-inactive " : "time-input"}
                       name="guests" value={formData.guests} 
                       onChange={handleChange}
+                      onFocus={handleGuestsOpen}
+                      // onBlur={handleGuestsClose}
                       />
-                        
+                      
+                       {/* <FontAwesomeIcon icon={ isGuestsOpen ? faChevronUp : faChevronDown} className={ isTimeOpen ? "icon-2-inactive" : "icon-2-active"}/> */}
+
                     </div>
                     <div className="icon-wraper">
                     <label htmlFor="occasion">Occasion</label>
                     
                     <FontAwesomeIcon icon={faChampagneGlasses} fontSize={25} className="occasion-icon" />
-                    <select id="occasion" name="occasion" className="occasion-input" value={formData.occasion} onChange={handleChange}>
+                    <select id="occasion" name="occasion" className="occasion-input" 
+                    value={formData.occasion} onChange={handleChange} >
                               <option value="Birthday">Birthday</option>
                               <option value="Anniversary">Anniversary</option>
                               <option value="Work Promotion">Work Promotion</option>
