@@ -125,7 +125,7 @@
     padding: 16px;
     width: 280px;
     text-align: center;
-    /* appearance: none; */
+    appearance: none;
     cursor: pointer;
     background-color: #EDEFEE;
     border-radius: 6px;
@@ -146,8 +146,7 @@
   border: none;
   box-shadow: 5px 5px 10px 2px rgba(54, 53, 53, 0.8);
   color: #495E57;
- } 
- 
+ }
 
  .occasion-input{
   padding: 16px;
