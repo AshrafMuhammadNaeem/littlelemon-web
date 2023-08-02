@@ -171,3 +171,15 @@
   color: #495E57;
   align-items: center;
  }
+
+ .images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+ }
+ booking-form form:last-child {
+  margin-top: auto;
+  align-self: center;
+}
