@@ -179,7 +179,10 @@
   gap: 10px;
   margin-top: 15px;
  }
- booking-form form:last-child {
+ .submit {
   margin-top: auto;
   align-self: center;
+  display: flex;
+  color: #F4CE14;
+  padding: 15px;
 }

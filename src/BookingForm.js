@@ -228,7 +228,7 @@ export  const  BookingForm = ({
                     
                     <form onSubmit={handleSubmit}>
                           <div>
-                            <input type="submit" value="Make Your reservation" />
+                            <input type="submit" value="Make Your reservation"  className="submit"/>
                           </div>
                         </form>
                               
