@@ -211,27 +211,28 @@ export  const  BookingForm = ({
 
           </div>
 
-                  <div className="images">
+                <div className="images-container">
+                    <div className="grid-container">
                         <div>
-                        <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+                        <img src={restaurant}  width={185}  alt="restaurant inside"></img>
 
                         </div>
                         <div>
-                        <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+                        <img src={require("./images/restaurant chef B.jpg")}  width={185}  alt="restaurant inside"></img>
 
                         </div>
                         <div>
-                        <img src={restaurant}  width={200}  alt="restaurant inside"></img>
+                        <img src={require("./images/imgfood.jpg")}  width={185} height={124} alt="restaurant inside"></img>
 
                         </div>
                     </div>
-                    
-                    <form onSubmit={handleSubmit}>
-                          <div>
-                            <input type="submit" value="Make Your reservation"  className="submit"/>
+                        <form onSubmit={handleSubmit}>
+                          <div className="submit">
+                            <input type="submit" value="Reserve a Table"  />
                           </div>
                         </form>
-                              
+                  </div>
+
       </div>
     )
 }
