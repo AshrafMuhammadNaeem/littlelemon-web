@@ -73,6 +73,7 @@ export const BookingPage = () => {
       formData={formData}
       setFormData={setFormData}
     />
+    
   );
 
 };
