@@ -6,6 +6,7 @@ import restaurant from './images/restaurant.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faClock, faChampagneGlasses, faChevronDown, faChevronUp, faUser } from '@fortawesome/free-solid-svg-icons';
 
+
 export  const  BookingForm = ({
       availableTimes,
       dispatch,
@@ -234,5 +235,6 @@ export  const  BookingForm = ({
                   </div>
 
       </div>
+      
     )
 }
