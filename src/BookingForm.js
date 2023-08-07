@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookingForm.css'
 import restaurant from './images/restaurant.jpg'
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faClock, faChampagneGlasses, faChevronDown, faChevronUp, faUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -229,7 +230,7 @@ export  const  BookingForm = ({
                     </div>
                         <form onSubmit={handleSubmit}>
                           <div className="submit">
-                            <input type="submit" value="Reserve a Table"  />
+                          <Link to="/confirmreservation"><input type="submit" value="Reserve a Table"  /> </Link>
                           </div>
                         </form>
                   </div>
