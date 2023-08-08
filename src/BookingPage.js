@@ -1,8 +1,8 @@
 
 import React, { useReducer, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { BookingForm } from './BookingForm';
 import { fetchAPI, submitAPI } from "./Api";
+import { CustomerDetails } from './CustomerDetails';
 
 
 export const BookingPage = () => {
@@ -66,14 +66,25 @@ export const BookingPage = () => {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (
-    <BookingForm
+    <div>
+       <BookingForm
       dispatch={dispatch}
       initializeTimes={initializeTimes}
       availableTimes={availableTimes}
       submitForm={submitForm}
       formData={formData}
       setFormData={setFormData}
+      
     />
+    <CustomerDetails 
+    formData={formData}
+    submitForm={submitForm}
+    setFormData={setFormData}
+    />
+
+    </div>
+   
+    
     
   );
 
