@@ -74,7 +74,6 @@ export const BookingPage = () => {
       submitForm={submitForm}
       formData={formData}
       setFormData={setFormData}
-      
     />
     <CustomerDetails 
     formData={formData}
@@ -83,9 +82,6 @@ export const BookingPage = () => {
     />
 
     </div>
-   
-    
-    
   );
 
 };
