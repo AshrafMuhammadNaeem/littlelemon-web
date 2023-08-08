@@ -75,7 +75,7 @@ export const BookingPage = () => {
       formData={formData}
       setFormData={setFormData}
     />
-    <CustomerDetails 
+    <CustomerDetails
     formData={formData}
     submitForm={submitForm}
     setFormData={setFormData}
